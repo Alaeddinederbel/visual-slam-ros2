@@ -18,7 +18,7 @@ The goal of this work is to design and implement a robotic system that can:
 
 ---
 
-# 🏗️ System Architecture
+#   System Architecture
 
 The system is built using a **modular ROS2 architecture** composed of multiple packages:
 ros2_ws/
@@ -72,7 +72,7 @@ ros2_ws/
 
 ---
 
-# 🤖 Robot Description
+#   Robot Description
 
 ### `my_robot_description`
 This package defines the robot model and visualization tools.
