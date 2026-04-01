@@ -22,28 +22,53 @@ The goal of this work is to design and implement a robotic system that can:
 
 The system is built using a **modular ROS2 architecture** composed of multiple packages:
 ros2_ws/
-└── src/
-├── my_robot_description/
-│ ├── urdf/
-│ ├── config/
-│ ├── launch/
-│ └── rviz/
+├── src/
 │
-├── my_robot_bringup/
-│ ├── launch/
-│ ├── worlds/
-│ ├── config/
-│ └── rviz/
+│ ├── my_robot_description/
+│ │ ├── config/
+│ │ │ └── camera_config.yaml
+│ │ ├── urdf/
+│ │ │ ├── camera.xacro
+│ │ │ ├── common_properties.xacro
+│ │ │ ├── mobile_base_gazebo.xacro
+│ │ │ └── my_robot.urdf.xacro
+│ │ ├── rviz/
+│ │ │ └── urdf_config.rviz
+│ │ ├── launch/
+│ │ │ └── display.launch.py
+│ │ ├── CMakeLists.txt
+│ │ └── package.xml
 │
-├── my_robot_navigation/
-│ ├── config/
-│ ├── ekf_config.yaml
-│ ├── nav2_params.yaml
-│ └── pose_transformer.yaml
-│ 
-│ 
-│ 
----
+│ ├── my_robot_bringup/
+│ │ ├── config/
+│ │ │ └── nav2_tf_fix_params.yaml
+│ │ ├── rviz/
+│ │ │ └── urdf_config.rviz
+│ │ ├── worlds/
+│ │ │ └── my_world.world
+│ │ ├── launch/
+│ │ │ ├── my_robot_gazebo.launch.py
+│ │ │ └── my_robot_gazebo.launch.xml
+│ │ ├── CMakeLists.txt
+│ │ └── package.xml
+│
+│ ├── my_robot_navigation/
+│ │ ├── config/
+│ │ │ ├── ekf_config.yaml
+│ │ │ ├── nav2_params.yaml
+│ │ │ └── pose_transformer.yaml
+│ │ ├── launch/
+│ │ └── (additional SLAM / navigation nodes)
+│
+│ ├── ORB-SLAM3/ (external or custom integration)
+│ ├── RTAB-Map integration/
+│ ├── custom_control_nodes/
+│ └── other_support_packages/
+│
+├── build/
+├── install/
+├── log/
+└── README.md
 
 ---
 
