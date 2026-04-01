@@ -1,0 +1,6 @@
+pose_transformer:
+  ros__parameters:
+    tf_publish_rate: 30.0
+    tf_future_dating: 0.1
+    smoothing_alpha: 0.8
+    publish_frequency: 20.0

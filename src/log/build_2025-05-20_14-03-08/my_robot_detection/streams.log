@@ -1,0 +1,17 @@
+[0.657s] Invoking command in '/home/msi/ros2_ws/src/build/my_robot_detection': AMENT_PREFIX_PATH=/home/msi/ros2_ws/src/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/msi/ros2_ws/src/install/cv_bridge:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/msi/ros2_ws/src/install/cv_bridge/lib:/home/msi/ros2_ws/install/multirobot_map_merge/lib:/home/msi/ros2_ws/install/image_geometry/lib:/home/msi/ros2_ws/install/cv_bridge/lib:/home/msi/ros2_ws/install/custom_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/home/msi/Dev/Pangolin/lib:/home/msi/Dev/Pangolin/build PYTHONPATH=/home/msi/ros2_ws/src/build/my_robot_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/msi/ros2_ws/src/install/my_robot_detection/lib/python3.10/site-packages:/home/msi/ros2_ws/src/install/cv_bridge/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/msi/ros2_ws/src/build/my_robot_detection/build --no-deps symlink_data
+[0.840s] running develop
+[0.974s] running egg_info
+[0.974s] writing my_robot_detection.egg-info/PKG-INFO
+[0.974s] writing dependency_links to my_robot_detection.egg-info/dependency_links.txt
+[0.974s] writing entry points to my_robot_detection.egg-info/entry_points.txt
+[0.974s] writing requirements to my_robot_detection.egg-info/requires.txt
+[0.974s] writing top-level names to my_robot_detection.egg-info/top_level.txt
+[0.975s] reading manifest file 'my_robot_detection.egg-info/SOURCES.txt'
+[0.976s] writing manifest file 'my_robot_detection.egg-info/SOURCES.txt'
+[0.977s] running build_ext
+[0.977s] Creating /home/msi/ros2_ws/src/install/my_robot_detection/lib/python3.10/site-packages/my-robot-detection.egg-link (link to .)
+[0.978s] Installing yolov8_node script to /home/msi/ros2_ws/src/install/my_robot_detection/lib/my_robot_detection
+[0.978s] 
+[0.978s] Installed /home/msi/ros2_ws/src/build/my_robot_detection
+[0.978s] running symlink_data
+[0.999s] Invoked command in '/home/msi/ros2_ws/src/build/my_robot_detection' returned '0': AMENT_PREFIX_PATH=/home/msi/ros2_ws/src/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/msi/ros2_ws/src/install/cv_bridge:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/msi/ros2_ws/src/install/cv_bridge/lib:/home/msi/ros2_ws/install/multirobot_map_merge/lib:/home/msi/ros2_ws/install/image_geometry/lib:/home/msi/ros2_ws/install/cv_bridge/lib:/home/msi/ros2_ws/install/custom_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/home/msi/Dev/Pangolin/lib:/home/msi/Dev/Pangolin/build PYTHONPATH=/home/msi/ros2_ws/src/build/my_robot_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/msi/ros2_ws/src/install/my_robot_detection/lib/python3.10/site-packages:/home/msi/ros2_ws/src/install/cv_bridge/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/msi/ros2_ws/src/build/my_robot_detection/build --no-deps symlink_data

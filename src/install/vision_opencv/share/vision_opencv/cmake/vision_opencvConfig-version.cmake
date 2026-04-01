@@ -1,0 +1,1 @@
+/home/msi/ros2_ws/src/build/vision_opencv/ament_cmake_core/vision_opencvConfig-version.cmake

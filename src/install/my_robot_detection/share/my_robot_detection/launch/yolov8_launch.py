@@ -1,0 +1,1 @@
+/home/msi/ros2_ws/src/build/my_robot_detection/launch/yolov8_launch.py

@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+
+
+<!-- ====== PROPRIÉTÉS ====== -->
+<xacro:property name="camera_length" value="0.005"/>
+<xacro:property name="camera_width" value="0.05"/>
+<xacro:property name="camera_height" value="0.03"/>
+<xacro:property name="camera_baseline" value="0.15"/>
+<xacro:property name="base_length" value="0.3"/>
+<xacro:property name="base_height" value="0.1"/>
+
+
+
+
+<!-- ====== Camera Calibration Parameters ====== -->
+<xacro:property name="fx" value="217.08247"/>
+<xacro:property name="fy" value="217.08247"/>
+<xacro:property name="cx" value="376.5"/>
+<xacro:property name="cy" value="240.5"/>
+<xacro:property name="k1" value="0.0"/>
+<xacro:property name="k2" value="0.0"/>
+<xacro:property name="p1" value="0.0"/>
+<xacro:property name="p2" value="0.0"/>
+<xacro:property name="bf" value="32.565"/>
+
+
+
+
+<!-- ========== LEFT CAMERA ========== -->
+<link name="left_camera_link">
+  <visual>
+    <geometry>
+      <box size="${camera_length} ${camera_width} ${camera_height}"/>
+    </geometry>
+    <material name="gold"/>
+  </visual>
+  <collision>
+    <geometry>
+      <box size="${camera_length} ${camera_width} ${camera_height}"/>
+    </geometry>
+  </collision>
+</link>
+
+
+
+
+<joint name="base_left_camera_joint" type="fixed">
+  <parent link="base_link"/>
+  <child link="left_camera_link"/>
+  <origin xyz="${(base_length + camera_length) / 2.0} ${camera_baseline / 2.0} ${base_height / 2.0}" rpy="0 0 0"/>
+</joint>
+
+
+
+
+<link name="left_camera_optical_link"/>
+<joint name="left_camera_optical_joint" type="fixed">
+  <origin xyz="0 0 0" rpy="${-pi/2} 0 ${-pi/2}"/>
+  <parent link="left_camera_link"/>
+  <child link="left_camera_optical_link"/>
+</joint>
+
+
+
+
+<gazebo reference="left_camera_link">
+  <material>Gazebo/Gold</material>
+  <sensor name="left_camera_sensor" type="camera">
+    <pose>0 0 0 0 0 0</pose>
+    <visualize>true</visualize>
+    <update_rate>15.0</update_rate>
+    <camera>
+      <horizontal_fov>2.0943951</horizontal_fov> <!-- 120° -->
+      <image>
+        <width>752</width>
+        <height>480</height>
+        <format>R8G8B8</format>
+      </image>
+      <clip>
+        <near>0.1</near>
+        <far>100</far>
+      </clip>
+      <distortion>
+        <k1>${k1}</k1>
+        <k2>${k2}</k2>
+        <k3>0.0</k3>
+        <p1>${p1}</p1>
+        <p2>${p2}</p2>
+        <center>${cx} ${cy}</center>
+      </distortion>
+      <intrinsics>
+        <fx>${fx}</fx>
+        <fy>${fy}</fy>
+        <cx>${cx}</cx>
+        <cy>${cy}</cy>
+      </intrinsics>
+    </camera>
+    <plugin name="left_camera_controller" filename="libgazebo_ros_camera.so">
+      <frame_name>left_camera_optical_link</frame_name>
+      <camera_name>left_camera</camera_name>
+      <image_width>752</image_width>
+      <image_height>480</image_height>
+      <ros>
+        <namespace>/camera/left</namespace>
+        <remapping>image_raw:=image</remapping>
+        <parameter name="publish_image">true</parameter>
+        <parameter name="publish_compressed">false</parameter>
+        <parameter name="publish_depth">false</parameter>
+        <parameter name="disable_pub_plugins">["compressed", "compressedDepth", "theora"]</parameter>
+      </ros>
+    </plugin>
+  </sensor>
+</gazebo>
+
+
+
+
+<!-- ========== RIGHT CAMERA ========== -->
+<link name="right_camera_link">
+  <visual>
+    <geometry>
+      <box size="${camera_length} ${camera_width} ${camera_height}"/>
+    </geometry>
+    <material name="gold"/>
+  </visual>
+  <collision>
+    <geometry>
+      <box size="${camera_length} ${camera_width} ${camera_height}"/>
+    </geometry>
+  </collision>
+</link>
+
+
+
+
+<joint name="base_right_camera_joint" type="fixed">
+  <parent link="base_link"/>
+  <child link="right_camera_link"/>
+  <origin xyz="${(base_length + camera_length) / 2.0} ${-camera_baseline / 2.0} ${base_height / 2.0}" rpy="0 0 0"/>
+</joint>
+
+
+
+
+<link name="right_camera_optical_link"/>
+<joint name="right_camera_optical_joint" type="fixed">
+  <origin xyz="0 0 0" rpy="${-pi/2} 0 ${-pi/2}"/>
+  <parent link="right_camera_link"/>
+  <child link="right_camera_optical_link"/>
+</joint>
+
+
+
+
+<gazebo reference="right_camera_link">
+  <material>Gazebo/Gold</material>
+  <sensor name="right_camera_sensor" type="camera">
+    <pose>0 0 0 0 0 0</pose>
+    <visualize>true</visualize>
+    <update_rate>15.0</update_rate>
+    <camera>
+      <horizontal_fov>2.0943951</horizontal_fov> <!-- 120° -->
+      <image>
+        <width>752</width>
+        <height>480</height>
+        <format>R8G8B8</format>
+      </image>
+      <clip>
+        <near>0.1</near>
+        <far>100</far>
+      </clip>
+      <distortion>
+        <k1>${k1}</k1>
+        <k2>${k2}</k2>
+        <k3>0.0</k3>
+        <p1>${p1}</p1>
+        <p2>${p2}</p2>
+        <center>${cx} ${cy}</center>
+      </distortion>
+      <intrinsics>
+        <fx>${fx}</fx>
+        <fy>${fy}</fy>
+        <cx>${cx}</cx>
+        <cy>${cy}</cy>
+      </intrinsics>
+    </camera>
+    <plugin name="right_camera_controller" filename="libgazebo_ros_camera.so">
+      <frame_name>right_camera_optical_link</frame_name>
+      <camera_name>right_camera</camera_name>
+      <image_width>752</image_width>
+      <image_height>480</image_height>
+      <ros>
+        <namespace>/camera/right</namespace>
+        <remapping>image_raw:=image</remapping>
+        <parameter name="publish_image">true</parameter>
+        <parameter name="publish_compressed">false</parameter>
+        <parameter name="publish_depth">false</parameter>
+        <parameter name="disable_pub_plugins">["compressed", "compressedDepth", "theora"]</parameter>
+      </ros>
+    </plugin>
+  </sensor>
+</gazebo>
+
+</robot>

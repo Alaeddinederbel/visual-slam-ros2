@@ -1,0 +1,4 @@
+std_msgs/Header header
+string class_name
+float32 score
+sensor_msgs/RegionOfInterest bbox  # x_offset, y_offset, width, height

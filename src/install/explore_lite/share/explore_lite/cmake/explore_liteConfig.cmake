@@ -1,0 +1,1 @@
+/home/msi/ros2_ws/src/build/explore_lite/ament_cmake_core/explore_liteConfig.cmake

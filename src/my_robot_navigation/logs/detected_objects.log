@@ -1,0 +1,6 @@
+YOLO Object Detection Log
+========================
+Session started: 2025-06-04 22:48:09
+
+Format: [TIMESTAMP] Object: CLASS_NAME, Confidence: XX.XX%, Position: (x, y, z)
+

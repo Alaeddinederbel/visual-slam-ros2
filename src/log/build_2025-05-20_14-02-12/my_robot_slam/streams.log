@@ -1,0 +1,93 @@
+[0.019s] Invoking command in '/home/msi/ros2_ws/src/build/my_robot_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/msi/ros2_ws/install/opencv_tests:/opt/ros/humble /usr/bin/cmake /home/msi/ros2_ws/src/my_robot_slam -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/msi/ros2_ws/src/install/my_robot_slam
+[0.167s] -- The C compiler identification is GNU 11.4.0
+[0.274s] -- The CXX compiler identification is GNU 11.4.0
+[0.285s] -- Detecting C compiler ABI info
+[0.358s] -- Detecting C compiler ABI info - done
+[0.368s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.369s] -- Detecting C compile features
+[0.370s] -- Detecting C compile features - done
+[0.377s] -- Detecting CXX compiler ABI info
+[0.453s] -- Detecting CXX compiler ABI info - done
+[0.459s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.459s] -- Detecting CXX compile features
+[0.459s] -- Detecting CXX compile features - done
+[0.488s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.691s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.756s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.801s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.888s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.897s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.911s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.935s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.952s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.077s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.089s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.260s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.295s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.337s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.357s] -- Looking for pthread.h
+[1.448s] -- Looking for pthread.h - found
+[1.448s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.519s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.520s] -- Found Threads: TRUE  
+[1.607s] -- Found slam_toolbox: 2.6.10 (/opt/ros/humble/share/slam_toolbox/cmake)
+[1.900s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.901s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.901s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.009s] -- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+[2.030s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[2.032s] -- Found OGRE
+[2.033s] --   static     : OFF
+[2.033s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[2.033s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[2.033s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[2.033s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[2.033s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[2.033s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[2.033s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[2.033s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[2.033s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[2.034s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[2.034s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[2.054s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[2.063s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[2.203s] -- Found X11: /usr/include   
+[2.204s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[2.339s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[2.339s] -- Looking for gethostbyname
+[2.433s] -- Looking for gethostbyname - found
+[2.434s] -- Looking for connect
+[2.507s] -- Looking for connect - found
+[2.507s] -- Looking for remove
+[2.589s] -- Looking for remove - found
+[2.590s] -- Looking for shmat
+[2.688s] -- Looking for shmat - found
+[2.688s] -- Looking for IceConnectionNumber in ICE
+[2.792s] -- Looking for IceConnectionNumber in ICE - found
+[2.970s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[3.301s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.451s] -- Configuring done
+[3.478s] -- Generating done
+[3.492s] -- Build files have been written to: /home/msi/ros2_ws/src/build/my_robot_slam
+[3.514s] Invoked command in '/home/msi/ros2_ws/src/build/my_robot_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/msi/ros2_ws/install/opencv_tests:/opt/ros/humble /usr/bin/cmake /home/msi/ros2_ws/src/my_robot_slam -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/msi/ros2_ws/src/install/my_robot_slam
+[3.520s] Invoking command in '/home/msi/ros2_ws/src/build/my_robot_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/msi/ros2_ws/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --build /home/msi/ros2_ws/src/build/my_robot_slam -- -j12 -l12
+[3.645s] Invoked command in '/home/msi/ros2_ws/src/build/my_robot_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/msi/ros2_ws/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --build /home/msi/ros2_ws/src/build/my_robot_slam -- -j12 -l12
+[3.647s] Invoking command in '/home/msi/ros2_ws/src/build/my_robot_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/msi/ros2_ws/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --install /home/msi/ros2_ws/src/build/my_robot_slam
+[3.670s] -- Install configuration: ""
+[3.672s] -- Execute custom install script
+[3.673s] -- Symlinking: /home/msi/ros2_ws/src/install/my_robot_slam/share/ament_index/resource_index/package_run_dependencies/my_robot_slam
+[3.691s] -- Symlinking: /home/msi/ros2_ws/src/install/my_robot_slam/share/ament_index/resource_index/parent_prefix_path/my_robot_slam
+[3.709s] -- Symlinking: /home/msi/ros2_ws/src/install/my_robot_slam/share/my_robot_slam/environment/ament_prefix_path.sh
+[3.750s] -- Symlinking: /home/msi/ros2_ws/src/install/my_robot_slam/share/my_robot_slam/environment/ament_prefix_path.dsv
+[3.772s] -- Symlinking: /home/msi/ros2_ws/src/install/my_robot_slam/share/my_robot_slam/environment/path.sh
+[3.792s] -- Symlinking: /home/msi/ros2_ws/src/install/my_robot_slam/share/my_robot_slam/environment/path.dsv
+[3.807s] -- Symlinking: /home/msi/ros2_ws/src/install/my_robot_slam/share/my_robot_slam/local_setup.bash
+[3.823s] -- Symlinking: /home/msi/ros2_ws/src/install/my_robot_slam/share/my_robot_slam/local_setup.sh
+[3.849s] -- Symlinking: /home/msi/ros2_ws/src/install/my_robot_slam/share/my_robot_slam/local_setup.zsh
+[3.871s] -- Symlinking: /home/msi/ros2_ws/src/install/my_robot_slam/share/my_robot_slam/local_setup.dsv
+[3.895s] -- Symlinking: /home/msi/ros2_ws/src/install/my_robot_slam/share/my_robot_slam/package.dsv
+[3.915s] -- Symlinking: /home/msi/ros2_ws/src/install/my_robot_slam/share/ament_index/resource_index/packages/my_robot_slam
+[3.932s] -- Symlinking: /home/msi/ros2_ws/src/install/my_robot_slam/share/my_robot_slam/cmake/my_robot_slamConfig.cmake
+[3.948s] -- Symlinking: /home/msi/ros2_ws/src/install/my_robot_slam/share/my_robot_slam/cmake/my_robot_slamConfig-version.cmake
+[3.987s] -- Symlinking: /home/msi/ros2_ws/src/install/my_robot_slam/share/my_robot_slam/package.xml
+[4.007s] Invoked command in '/home/msi/ros2_ws/src/build/my_robot_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/msi/ros2_ws/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --install /home/msi/ros2_ws/src/build/my_robot_slam

@@ -1,0 +1,40 @@
+/**:
+  ros__parameters:
+    # Paramètres généraux du nœud
+    use_sim_time: false
+    
+    # Paramètres de détection YOLO
+    yolo:
+      confidence_threshold: 0.5      # Seuil de confiance pour la détection
+      nms_threshold: 0.4             # Seuil pour la suppression des non-maximums
+      input_width: 416               # Largeur d'entrée pour le réseau YOLO
+      input_height: 416              # Hauteur d'entrée pour le réseau YOLO
+      enable_gpu: false              # Utiliser le GPU pour l'inférence
+      model_path: "model/yolov5s.onnx"  # Chemin vers le modèle YOLO (relatif au package)
+      classes_path: "model/coco.names"  # Chemin vers les noms des classes
+    
+    # Paramètres de transformation des détections en obstacles
+    obstacle_detection:
+      min_obstacle_height: 0.1       # Hauteur minimale (m) pour considérer un obstacle
+      max_obstacle_height: 2.0       # Hauteur maximale (m) pour les obstacles
+      ground_threshold: 0.05         # Seuil pour détecter le sol (m)
+      publish_markers: true          # Publier des marqueurs de visualisation
+      
+    # Paramètres pour les transformations TF2
+    transforms:
+      camera_frame: "camera_link"    # Frame ID de la caméra
+      base_frame: "base_footprint"        # Frame ID du robot
+      map_frame: "map"               # Frame ID de la carte
+      
+    # Paramètres pour les topics ROS
+    topics:
+      image_input: "/camera/left/left_camera/image_raw"     # Topic d'entrée pour l'image
+      depth_input: "/camera/depth/image_raw"  # Topic d'entrée pour l'image de profondeur
+      detections_output: "/yolo/detections"  # Topic de sortie pour les détections
+      obstacles_output: "/obstacles"        # Topic de sortie pour les obstacles
+      markers_output: "/visualization_marker"  # Topic pour les marqueurs de visualisation
+      
+    # Paramètres de performance
+    performance:
+      detection_rate: 10.0           # Fréquence maximale de détection (Hz)
+      use_throttling: true           # Limiter la fréquence de traitement

@@ -1,0 +1,3 @@
+[console_scripts]
+yolov8_node = my_robot_detection.yolov8_node:main
+

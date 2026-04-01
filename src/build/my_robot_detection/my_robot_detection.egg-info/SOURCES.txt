@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+launch/integrated_navigation_launch.py
+launch/yolov8_launch.py
+my_robot_detection/__init__.py
+my_robot_detection/integrated_navigation.py
+my_robot_detection/yolov8_node.py
+my_robot_detection.egg-info/PKG-INFO
+my_robot_detection.egg-info/SOURCES.txt
+my_robot_detection.egg-info/dependency_links.txt
+my_robot_detection.egg-info/entry_points.txt
+my_robot_detection.egg-info/requires.txt
+my_robot_detection.egg-info/top_level.txt
+my_robot_detection.egg-info/zip-safe
+resource/my_robot_detection

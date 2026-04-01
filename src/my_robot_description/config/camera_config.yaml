@@ -1,0 +1,11 @@
+/camera/left/left_camera:
+  ros__parameters:
+    disable_pub_plugins: ["compressed", "compressedDepth", "theora"]
+    publish_compressed: false
+    publish_depth: false
+
+/camera/right/right_camera:
+  ros__parameters:
+    disable_pub_plugins: ["compressed", "compressedDepth", "theora"]
+    publish_compressed: false
+    publish_depth: false

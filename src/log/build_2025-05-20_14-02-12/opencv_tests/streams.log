@@ -1,0 +1,26 @@
+[1.102s] Invoking command in '/home/msi/ros2_ws/src/build/opencv_tests': AMENT_PREFIX_PATH=/home/msi/ros2_ws/src/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/msi/ros2_ws/src/install/cv_bridge:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/msi/ros2_ws/src/install/cv_bridge/lib:/home/msi/ros2_ws/install/multirobot_map_merge/lib:/home/msi/ros2_ws/install/image_geometry/lib:/home/msi/ros2_ws/install/cv_bridge/lib:/home/msi/ros2_ws/install/custom_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/home/msi/Dev/Pangolin/lib:/home/msi/Dev/Pangolin/build PYTHONPATH=/home/msi/ros2_ws/src/build/opencv_tests/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/msi/ros2_ws/src/install/opencv_tests/lib/python3.10/site-packages:/home/msi/ros2_ws/src/install/cv_bridge/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/msi/ros2_ws/src/build/opencv_tests/build --no-deps symlink_data
+[1.361s] running develop
+[1.504s] running egg_info
+[1.504s] creating opencv_tests.egg-info
+[1.504s] writing opencv_tests.egg-info/PKG-INFO
+[1.505s] writing dependency_links to opencv_tests.egg-info/dependency_links.txt
+[1.505s] writing entry points to opencv_tests.egg-info/entry_points.txt
+[1.505s] writing requirements to opencv_tests.egg-info/requires.txt
+[1.505s] writing top-level names to opencv_tests.egg-info/top_level.txt
+[1.505s] writing manifest file 'opencv_tests.egg-info/SOURCES.txt'
+[1.506s] reading manifest file 'opencv_tests.egg-info/SOURCES.txt'
+[1.506s] writing manifest file 'opencv_tests.egg-info/SOURCES.txt'
+[1.690s] running build_ext
+[1.690s] Creating /home/msi/ros2_ws/src/install/opencv_tests/lib/python3.10/site-packages/opencv-tests.egg-link (link to .)
+[1.691s] Installing broadcast script to /home/msi/ros2_ws/src/install/opencv_tests/lib/opencv_tests
+[1.691s] Installing rosfacedetect script to /home/msi/ros2_ws/src/install/opencv_tests/lib/opencv_tests
+[1.692s] Installing source script to /home/msi/ros2_ws/src/install/opencv_tests/lib/opencv_tests
+[1.692s] 
+[1.692s] Installed /home/msi/ros2_ws/src/build/opencv_tests
+[1.692s] running symlink_data
+[1.692s] creating /home/msi/ros2_ws/src/install/opencv_tests/share/ament_index
+[1.692s] creating /home/msi/ros2_ws/src/install/opencv_tests/share/ament_index/resource_index
+[1.692s] creating /home/msi/ros2_ws/src/install/opencv_tests/share/ament_index/resource_index/packages
+[1.692s] symbolically linking /home/msi/ros2_ws/src/build/opencv_tests/resource/opencv_tests -> /home/msi/ros2_ws/src/install/opencv_tests/share/ament_index/resource_index/packages
+[1.692s] symbolically linking /home/msi/ros2_ws/src/build/opencv_tests/package.xml -> /home/msi/ros2_ws/src/install/opencv_tests/share/opencv_tests
+[1.821s] Invoked command in '/home/msi/ros2_ws/src/build/opencv_tests' returned '0': AMENT_PREFIX_PATH=/home/msi/ros2_ws/src/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/msi/ros2_ws/src/install/cv_bridge:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/msi/ros2_ws/src/install/cv_bridge/lib:/home/msi/ros2_ws/install/multirobot_map_merge/lib:/home/msi/ros2_ws/install/image_geometry/lib:/home/msi/ros2_ws/install/cv_bridge/lib:/home/msi/ros2_ws/install/custom_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/home/msi/Dev/Pangolin/lib:/home/msi/Dev/Pangolin/build PYTHONPATH=/home/msi/ros2_ws/src/build/opencv_tests/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/msi/ros2_ws/src/install/opencv_tests/lib/python3.10/site-packages:/home/msi/ros2_ws/src/install/cv_bridge/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/msi/ros2_ws/src/build/opencv_tests/build --no-deps symlink_data

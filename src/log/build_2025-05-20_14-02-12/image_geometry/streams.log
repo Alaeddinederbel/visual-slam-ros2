@@ -1,0 +1,101 @@
+[0.022s] Invoking command in '/home/msi/ros2_ws/src/build/image_geometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/msi/ros2_ws/install/opencv_tests:/opt/ros/humble /usr/bin/cmake /home/msi/ros2_ws/src/vision_opencv/image_geometry -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/msi/ros2_ws/src/install/image_geometry
+[0.182s] -- The C compiler identification is GNU 11.4.0
+[0.281s] -- The CXX compiler identification is GNU 11.4.0
+[0.299s] -- Detecting C compiler ABI info
+[0.375s] -- Detecting C compiler ABI info - done
+[0.385s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.386s] -- Detecting C compile features
+[0.386s] -- Detecting C compile features - done
+[0.390s] -- Detecting CXX compiler ABI info
+[0.475s] -- Detecting CXX compiler ABI info - done
+[0.483s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.483s] -- Detecting CXX compile features
+[0.483s] -- Detecting CXX compile features - done
+[0.487s] -- Found ament_cmake_python: 1.3.11 (/opt/ros/humble/share/ament_cmake_python/cmake)
+[0.491s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.665s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.747s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.890s] -- Found OpenCV: /usr/local (found version "4.2.0") found components: calib3d core highgui imgproc 
+[0.895s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.931s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.937s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.944s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.956s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.975s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.773s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.777s] -- Looking for pthread.h
+[1.847s] -- Looking for pthread.h - found
+[1.847s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.930s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.930s] -- Found Threads: TRUE  
+[1.996s] -- Configuring done
+[2.019s] -- Generating done
+[2.026s] -- Build files have been written to: /home/msi/ros2_ws/src/build/image_geometry
+[2.037s] Invoked command in '/home/msi/ros2_ws/src/build/image_geometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/msi/ros2_ws/install/opencv_tests:/opt/ros/humble /usr/bin/cmake /home/msi/ros2_ws/src/vision_opencv/image_geometry -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/msi/ros2_ws/src/install/image_geometry
+[2.039s] Invoking command in '/home/msi/ros2_ws/src/build/image_geometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/msi/ros2_ws/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --build /home/msi/ros2_ws/src/build/image_geometry -- -j12 -l12
+[2.090s] [  9%] [32mBuilding CXX object CMakeFiles/image_geometry.dir/src/pinhole_camera_model.cpp.o[0m
+[2.090s] [ 18%] [32mBuilding CXX object CMakeFiles/image_geometry.dir/src/stereo_camera_model.cpp.o[0m
+[2.094s] [ 27%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[2.094s] [ 36%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[2.100s] [ 36%] Built target ament_cmake_python_symlink_image_geometry
+[2.448s] running egg_info
+[2.449s] creating image_geometry.egg-info
+[2.449s] writing image_geometry.egg-info/PKG-INFO
+[2.450s] writing dependency_links to image_geometry.egg-info/dependency_links.txt
+[2.450s] writing top-level names to image_geometry.egg-info/top_level.txt
+[2.450s] writing manifest file 'image_geometry.egg-info/SOURCES.txt'
+[2.456s] reading manifest file 'image_geometry.egg-info/SOURCES.txt'
+[2.456s] writing manifest file 'image_geometry.egg-info/SOURCES.txt'
+[2.496s] [ 36%] Built target ament_cmake_python_build_image_geometry_egg
+[3.670s] [ 45%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[3.781s] [ 45%] Built target gtest_main
+[4.482s] [ 54%] [32m[1mLinking CXX shared library libimage_geometry.so[0m
+[5.097s] [ 54%] Built target image_geometry
+[7.484s] [ 63%] [32m[1mLinking CXX static library libgtest.a[0m
+[7.566s] [ 63%] Built target gtest
+[7.598s] [ 81%] [32mBuilding CXX object test/CMakeFiles/image_geometry-utest.dir/utest.cpp.o[0m
+[7.598s] [ 81%] [32mBuilding CXX object test/CMakeFiles/image_geometry-utest-equi.dir/utest_equi.cpp.o[0m
+[9.236s] [ 90%] [32m[1mLinking CXX executable image_geometry-utest[0m
+[9.259s] [100%] [32m[1mLinking CXX executable image_geometry-utest-equi[0m
+[9.592s] [100%] Built target image_geometry-utest-equi
+[9.593s] [100%] Built target image_geometry-utest
+[9.605s] Invoked command in '/home/msi/ros2_ws/src/build/image_geometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/msi/ros2_ws/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --build /home/msi/ros2_ws/src/build/image_geometry -- -j12 -l12
+[9.606s] Invoking command in '/home/msi/ros2_ws/src/build/image_geometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/msi/ros2_ws/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --install /home/msi/ros2_ws/src/build/image_geometry
+[9.614s] -- Install configuration: ""
+[9.614s] -- Execute custom install script
+[9.614s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/share/image_geometry/environment/pythonpath.sh
+[9.624s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/share/image_geometry/environment/pythonpath.dsv
+[9.633s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-4.1.0-py3.10.egg-info/PKG-INFO
+[9.641s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-4.1.0-py3.10.egg-info/SOURCES.txt
+[9.648s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-4.1.0-py3.10.egg-info/dependency_links.txt
+[9.656s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-4.1.0-py3.10.egg-info/top_level.txt
+[9.664s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/__init__.py
+[9.673s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/cameramodels.py
+[9.681s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/include/image_geometry/image_geometry/pinhole_camera_model.hpp
+[9.689s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/include/image_geometry/image_geometry/stereo_camera_model.hpp
+[9.697s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/include/image_geometry/image_geometry/visibility_control.hpp
+[9.705s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/share/ament_index/resource_index/package_run_dependencies/image_geometry
+[9.714s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/share/ament_index/resource_index/parent_prefix_path/image_geometry
+[9.722s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/share/image_geometry/environment/ament_prefix_path.sh
+[9.729s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/share/image_geometry/environment/ament_prefix_path.dsv
+[9.737s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/share/image_geometry/environment/path.sh
+[9.746s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/share/image_geometry/environment/path.dsv
+[9.754s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/share/image_geometry/local_setup.bash
+[9.770s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/share/image_geometry/local_setup.sh
+[9.778s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/share/image_geometry/local_setup.zsh
+[9.786s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/share/image_geometry/local_setup.dsv
+[9.795s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/share/image_geometry/package.dsv
+[9.803s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/share/ament_index/resource_index/packages/image_geometry
+[9.811s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/share/image_geometry/cmake/ament_cmake_export_targets-extras.cmake
+[9.819s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/share/image_geometry/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.827s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/share/image_geometry/cmake/image_geometryConfig.cmake
+[9.835s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/share/image_geometry/cmake/image_geometryConfig-version.cmake
+[9.843s] -- Symlinking: /home/msi/ros2_ws/src/install/image_geometry/share/image_geometry/package.xml
+[9.894s] Listing '/home/msi/ros2_ws/src/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry'...
+[9.894s] Compiling '/home/msi/ros2_ws/src/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/__init__.py'...
+[9.894s] Compiling '/home/msi/ros2_ws/src/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/cameramodels.py'...
+[9.898s] -- Installing: /home/msi/ros2_ws/src/install/image_geometry/lib/libimage_geometry.so
+[9.899s] -- Set runtime path of "/home/msi/ros2_ws/src/install/image_geometry/lib/libimage_geometry.so" to ""
+[9.899s] -- Installing: /home/msi/ros2_ws/src/install/image_geometry/share/image_geometry/cmake/export_image_geometryExport.cmake
+[9.899s] -- Installing: /home/msi/ros2_ws/src/install/image_geometry/share/image_geometry/cmake/export_image_geometryExport-noconfig.cmake
+[9.902s] Invoked command in '/home/msi/ros2_ws/src/build/image_geometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/msi/ros2_ws/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --install /home/msi/ros2_ws/src/build/image_geometry

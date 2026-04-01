@@ -1,0 +1,1 @@
+/home/msi/ros2_ws/src/build/multirobot_map_merge/ament_cmake_core/multirobot_map_mergeConfig-version.cmake

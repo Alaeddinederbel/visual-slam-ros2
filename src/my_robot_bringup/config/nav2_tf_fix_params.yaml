@@ -1,0 +1,43 @@
+/**:
+  ros__parameters:
+    use_sim_time: true  # Changez à false si vous utilisez un robot réel
+
+# Paramètres du buffer TF
+tf_buffer_server:
+  ros__parameters:
+    buffer_duration: 60.0  # Augmenté à 60 secondes
+
+# Paramètres spécifiques à Nav2 pour gérer TF
+amcl:
+  ros__parameters:
+    transform_tolerance: 5.0  # Augmenté pour plus de tolérance
+    tf_broadcast: true
+
+controller_server:
+  ros__parameters:
+    transform_tolerance: 5.0  # Augmenté pour plus de tolérance
+
+planner_server:
+  ros__parameters:
+    transform_tolerance: 5.0  # Augmenté pour plus de tolérance
+
+bt_navigator:
+  ros__parameters:
+    transform_tolerance: 5.0  # Augmenté pour plus de tolérance
+
+global_costmap:
+  global_costmap:
+    ros__parameters:
+      transform_tolerance: 5.0
+      always_send_full_costmap: true
+
+local_costmap:
+  local_costmap:
+    ros__parameters:
+      transform_tolerance: 5.0
+      always_send_full_costmap: true
+
+# Paramètres pour le static_transform_publisher
+static_transform_publisher:
+  ros__parameters:
+    republish_frequency: 5.0  # Augmenté pour publier plus fréquemment

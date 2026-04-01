@@ -1,0 +1,26 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/msi/ros2_ws/install/terrain_nav/local/lib/python3.10/dist-packages",
+        "/home/msi/ros2_ws/build/rtabmap_python",
+        "/home/msi/ros2_ws/install/rtabmap_python/lib/python3.10/site-packages",
+        "/home/msi/ros2_ws/install/rtabmap_msgs/local/lib/python3.10/dist-packages",
+        "/home/msi/ros2_ws/build/opencv_tests",
+        "/home/msi/ros2_ws/install/opencv_tests/lib/python3.10/site-packages",
+        "/home/msi/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages",
+        "/home/msi/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/msi/ros2_ws/install/terrain_nav/local/lib/python3.10/dist-packages",
+        "/home/msi/ros2_ws/build/rtabmap_python",
+        "/home/msi/ros2_ws/install/rtabmap_python/lib/python3.10/site-packages",
+        "/home/msi/ros2_ws/install/rtabmap_msgs/local/lib/python3.10/dist-packages",
+        "/home/msi/ros2_ws/build/opencv_tests",
+        "/home/msi/ros2_ws/install/opencv_tests/lib/python3.10/site-packages",
+        "/home/msi/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages",
+        "/home/msi/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

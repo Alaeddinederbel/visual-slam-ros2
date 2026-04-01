@@ -1,0 +1,35 @@
+# config/rtabmap_params.yaml
+
+rtabmap:
+  ros__parameters:
+    frame_id: "base_footprint"
+    odom_frame_id: "odom"
+    map_frame_id: "map"
+    use_sim_time: false
+    subscribe_stereo: true
+    subscribe_depth: false
+    approx_sync: true
+    qos_image: 1
+    queue_size: 10
+    database_path: "~/.ros/rtabmap.db"
+
+    # Input sources
+    odom_topic: "/orb_slam3/camera_pose"
+    subscribe_cloud: true
+    cloud_topic: "/orb_slam3/map_points"
+
+    # Optimization parameters
+    Rtabmap/DetectionRate: "3"
+    Mem/ImagePreDecimation: "2"
+    RGBD/NeighborLinkRefining: "true"
+    RGBD/ProximityBySpace: "true"
+    RGBD/AngularUpdate: "0.01"
+    RGBD/LinearUpdate: "0.01"
+    Reg/Strategy: "1"  # 1=ICP for feature-based alignment with ORB-SLAM3
+    Vis/MinInliers: "12"
+    Vis/InlierDistance: "0.1"
+
+    # Grid mapping
+    Grid/CellSize: "0.05"
+    Grid/RangeMax: "5.0"
+    Grid/3D: true

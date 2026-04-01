@@ -1,0 +1,1 @@
+/home/msi/ros2_ws/src/build/my_rtabmap_config/ament_cmake_core/my_rtabmap_configConfig-version.cmake

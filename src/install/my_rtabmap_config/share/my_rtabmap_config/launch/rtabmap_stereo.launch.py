@@ -1,0 +1,1 @@
+/home/msi/ros2_ws/src/my_rtabmap_config/launch/rtabmap_stereo.launch.py

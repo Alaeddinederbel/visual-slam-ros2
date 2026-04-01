@@ -1,0 +1,33 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/msi/ros2_ws/install/terrain_nav/include/**",
+        "/home/msi/ros2_ws/install/rtabmap_rviz_plugins/include/**",
+        "/home/msi/ros2_ws/install/rtabmap_conversions/include/**",
+        "/home/msi/ros2_ws/install/rtabmap_msgs/include/**",
+        "/home/msi/ros2_ws/install/multirobot_map_merge/include/**",
+        "/home/msi/ros2_ws/install/image_geometry/include/**",
+        "/home/msi/ros2_ws/install/explore_lite/include/**",
+        "/home/msi/ros2_ws/install/cv_bridge/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/msi/ros2_ws/src/m-explore-ros2/explore/include/**",
+        "/home/msi/ros2_ws/src/m-explore-ros2/map_merge/include/**",
+        "/home/msi/ros2_ws/src/orbslam3_ros2/include/**",
+        "/home/msi/ros2_ws/src/vision_opencv/cv_bridge/include/**",
+        "/home/msi/ros2_ws/src/vision_opencv/image_geometry/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

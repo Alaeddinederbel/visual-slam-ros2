@@ -1,0 +1,1476 @@
+[0.542s] Invoking command in '/home/msi/ros2_ws/src/build/orbslam3_ros2': AMENT_PREFIX_PATH=/home/msi/ros2_ws/src/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/msi/ros2_ws/src/install/cv_bridge:/home/msi/ros2_ws/install/vision_opencv:/home/msi/ros2_ws/install/orbslam3_ros2:/home/msi/ros2_ws/install/my_rtabmap_config:/home/msi/ros2_ws/install/my_robot_slam:/home/msi/ros2_ws/install/my_robot_navigation:/home/msi/ros2_ws/install/my_robot_detection:/home/msi/ros2_ws/install/my_robot_bringup:/home/msi/ros2_ws/install/my_robot_description:/home/msi/ros2_ws/install/multirobot_map_merge:/home/msi/ros2_ws/install/image_geometry:/home/msi/ros2_ws/install/explore_lite:/home/msi/ros2_ws/install/cv_bridge:/home/msi/ros2_ws/install/custom_msgs:/home/msi/ros2_ws/install/opencv_tests:/opt/ros/humble LD_LIBRARY_PATH=/home/msi/ros2_ws/src/install/cv_bridge/lib:/home/msi/ros2_ws/install/multirobot_map_merge/lib:/home/msi/ros2_ws/install/image_geometry/lib:/home/msi/ros2_ws/install/cv_bridge/lib:/home/msi/ros2_ws/install/custom_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/home/msi/Dev/Pangolin/lib:/home/msi/Dev/Pangolin/build PYTHONPATH=/home/msi/ros2_ws/src/install/cv_bridge/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/msi/ros2_ws/src/orbslam3_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/msi/ros2_ws/src/install/orbslam3_ros2
+[0.595s] -- The C compiler identification is GNU 11.4.0
+[0.652s] -- The CXX compiler identification is GNU 11.4.0
+[0.662s] -- Detecting C compiler ABI info
+[0.734s] -- Detecting C compiler ABI info - done
+[0.746s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.746s] -- Detecting C compile features
+[0.747s] -- Detecting C compile features - done
+[0.751s] -- Detecting CXX compiler ABI info
+[0.831s] -- Detecting CXX compiler ABI info - done
+[0.842s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.842s] -- Detecting CXX compile features
+[0.843s] -- Detecting CXX compile features - done
+[0.847s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.997s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.060s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.093s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[1.138s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.142s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.149s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.160s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.175s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.213s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.216s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.313s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.346s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.382s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.392s] -- Looking for pthread.h
+[1.744s] -- Looking for pthread.h - found
+[1.745s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.839s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.841s] -- Found Threads: TRUE  
+[1.877s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.925s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[1.949s] -- Found message_filters: 4.3.7 (/opt/ros/humble/share/message_filters/cmake)
+[1.952s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[1.961s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[2.020s] -- Found image_transport: 3.1.11 (/opt/ros/humble/share/image_transport/cmake)
+[2.036s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[2.089s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL 
+[2.090s] -- Found OpenCV: /usr/local (found suitable version "4.2.0", minimum required is "4.2") found components: core imgproc calib3d 
+[2.116s] -- Checking for module 'eigen3'
+[2.130s] --   Found eigen3, version 3.4.0
+[2.157s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[2.157s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.196s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[2.209s] -- Checking for module 'flann'
+[2.222s] --   Found flann, version 1.9.1
+[2.251s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[2.252s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[2.293s] -- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  
+[2.298s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX 
+[2.435s] -- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") 
+[2.435s] -- Found MPI: TRUE (found version "3.1") found components: C 
+[2.438s] -- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") 
+[2.445s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[2.458s] -- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") 
+[2.469s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[2.535s] -- Found X11: /usr/include   
+[2.535s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[2.590s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[2.590s] -- Looking for gethostbyname
+[2.641s] -- Looking for gethostbyname - found
+[2.641s] -- Looking for connect
+[2.694s] -- Looking for connect - found
+[2.694s] -- Looking for remove
+[2.746s] -- Looking for remove - found
+[2.746s] -- Looking for shmat
+[2.805s] -- Looking for shmat - found
+[2.805s] -- Looking for IceConnectionNumber in ICE
+[2.861s] -- Looking for IceConnectionNumber in ICE - found
+[2.925s] -- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") 
+[2.930s] -- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  
+[2.933s] -- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") 
+[2.936s] -- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") 
+[3.109s] -- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") 
+[3.115s] -- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  
+[3.118s] -- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") 
+[3.128s] -- Found utf8cpp: /usr/include/utf8cpp  
+[3.202s] -- Checking for module 'libusb-1.0'
+[3.216s] --   Found libusb-1.0, version 1.0.25
+[3.249s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[3.250s] -- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") 
+[3.250s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.304s] -- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") 
+[3.304s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.304s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[3.425s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[3.430s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.435s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.561s] -- Found Qhull version 8.0.2
+[3.663s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.757s] -- looking for PCL_COMMON
+[3.757s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[3.758s] -- looking for PCL_KDTREE
+[3.758s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[3.758s] -- looking for PCL_OCTREE
+[3.759s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[3.759s] -- looking for PCL_SEARCH
+[3.760s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[3.760s] -- looking for PCL_SAMPLE_CONSENSUS
+[3.760s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[3.760s] -- looking for PCL_FILTERS
+[3.761s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[3.761s] -- looking for PCL_2D
+[3.761s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[3.761s] -- looking for PCL_GEOMETRY
+[3.761s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[3.761s] -- looking for PCL_IO
+[3.762s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[3.762s] -- looking for PCL_FEATURES
+[3.763s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[3.763s] -- looking for PCL_ML
+[3.763s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[3.763s] -- looking for PCL_SEGMENTATION
+[3.764s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[3.764s] -- looking for PCL_VISUALIZATION
+[3.769s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[3.769s] -- looking for PCL_SURFACE
+[3.769s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[3.769s] -- looking for PCL_REGISTRATION
+[3.770s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[3.770s] -- looking for PCL_KEYPOINTS
+[3.771s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[3.771s] -- looking for PCL_TRACKING
+[3.771s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[3.771s] -- looking for PCL_RECOGNITION
+[3.772s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[3.772s] -- looking for PCL_STEREO
+[3.772s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[3.772s] -- looking for PCL_APPS
+[3.773s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[3.773s] -- looking for PCL_IN_HAND_SCANNER
+[3.774s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[3.774s] -- looking for PCL_MODELER
+[3.774s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[3.774s] -- looking for PCL_POINT_CLOUD_EDITOR
+[3.776s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[3.776s] -- looking for PCL_OUTOFCORE
+[3.777s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[3.777s] -- looking for PCL_PEOPLE
+[3.777s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[3.778s] -- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  
+[3.787s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[3.876s] -- Configuring done
+[4.119s] -- Generating done
+[4.140s] -- Build files have been written to: /home/msi/ros2_ws/src/build/orbslam3_ros2
+[4.156s] Invoked command in '/home/msi/ros2_ws/src/build/orbslam3_ros2' returned '0': AMENT_PREFIX_PATH=/home/msi/ros2_ws/src/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/msi/ros2_ws/src/install/cv_bridge:/home/msi/ros2_ws/install/vision_opencv:/home/msi/ros2_ws/install/orbslam3_ros2:/home/msi/ros2_ws/install/my_rtabmap_config:/home/msi/ros2_ws/install/my_robot_slam:/home/msi/ros2_ws/install/my_robot_navigation:/home/msi/ros2_ws/install/my_robot_detection:/home/msi/ros2_ws/install/my_robot_bringup:/home/msi/ros2_ws/install/my_robot_description:/home/msi/ros2_ws/install/multirobot_map_merge:/home/msi/ros2_ws/install/image_geometry:/home/msi/ros2_ws/install/explore_lite:/home/msi/ros2_ws/install/cv_bridge:/home/msi/ros2_ws/install/custom_msgs:/home/msi/ros2_ws/install/opencv_tests:/opt/ros/humble LD_LIBRARY_PATH=/home/msi/ros2_ws/src/install/cv_bridge/lib:/home/msi/ros2_ws/install/multirobot_map_merge/lib:/home/msi/ros2_ws/install/image_geometry/lib:/home/msi/ros2_ws/install/cv_bridge/lib:/home/msi/ros2_ws/install/custom_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/home/msi/Dev/Pangolin/lib:/home/msi/Dev/Pangolin/build PYTHONPATH=/home/msi/ros2_ws/src/install/cv_bridge/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/msi/ros2_ws/src/orbslam3_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/msi/ros2_ws/src/install/orbslam3_ros2
+[4.158s] Invoking command in '/home/msi/ros2_ws/src/build/orbslam3_ros2': AMENT_PREFIX_PATH=/home/msi/ros2_ws/src/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/msi/ros2_ws/src/install/cv_bridge:/home/msi/ros2_ws/install/vision_opencv:/home/msi/ros2_ws/install/orbslam3_ros2:/home/msi/ros2_ws/install/my_rtabmap_config:/home/msi/ros2_ws/install/my_robot_slam:/home/msi/ros2_ws/install/my_robot_navigation:/home/msi/ros2_ws/install/my_robot_detection:/home/msi/ros2_ws/install/my_robot_bringup:/home/msi/ros2_ws/install/my_robot_description:/home/msi/ros2_ws/install/multirobot_map_merge:/home/msi/ros2_ws/install/image_geometry:/home/msi/ros2_ws/install/explore_lite:/home/msi/ros2_ws/install/cv_bridge:/home/msi/ros2_ws/install/custom_msgs:/home/msi/ros2_ws/install/opencv_tests:/opt/ros/humble LD_LIBRARY_PATH=/home/msi/ros2_ws/src/install/cv_bridge/lib:/home/msi/ros2_ws/install/multirobot_map_merge/lib:/home/msi/ros2_ws/install/image_geometry/lib:/home/msi/ros2_ws/install/cv_bridge/lib:/home/msi/ros2_ws/install/custom_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/home/msi/Dev/Pangolin/lib:/home/msi/Dev/Pangolin/build PYTHONPATH=/home/msi/ros2_ws/src/install/cv_bridge/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/msi/ros2_ws/src/build/orbslam3_ros2 -- -j12 -l12
+[4.218s] [ 66%] [32mBuilding CXX object CMakeFiles/stereo_node.dir/src/stereo/stereo-slam-node.cpp.o[0m
+[4.218s] [ 66%] [32mBuilding CXX object CMakeFiles/stereo_node.dir/src/stereo/stereo.cpp.o[0m
+[9.387s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:30[m[K,
+[9.387s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[9.387s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[9.387s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[9.387s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[9.387s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[9.387s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[9.387s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[9.387s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[9.387s] [01m[K/home/msi/Dev/ORB_SLAM3/include/ImuTypes.h:[m[K In member function ‘[01m[Kvoid ORB_SLAM3::IMU::Preintegrated::printMeasurements() const[m[K’:
+[9.387s] [01m[K/home/msi/Dev/ORB_SLAM3/include/ImuTypes.h:204:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ORB_SLAM3::IMU::Preintegrated::integrable>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[9.387s]   204 |         for(int i=0; [01;35m[Ki<mvMeasurements.size()[m[K; i++){
+[9.387s]       |                      [01;35m[K~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.405s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:30[m[K,
+[9.405s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[9.405s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[9.405s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[9.405s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[9.405s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[9.405s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[9.405s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[9.405s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[9.405s] [01m[K/home/msi/Dev/ORB_SLAM3/include/ImuTypes.h:[m[K In member function ‘[01m[Kvoid ORB_SLAM3::IMU::Preintegrated::printMeasurements() const[m[K’:
+[9.405s] [01m[K/home/msi/Dev/ORB_SLAM3/include/ImuTypes.h:204:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ORB_SLAM3::IMU::Preintegrated::integrable>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[9.405s]   204 |         for(int i=0; [01;35m[Ki<mvMeasurements.size()[m[K; i++){
+[9.405s]       |                      [01;35m[K~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.443s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37[m[K,
+[9.443s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[9.443s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[9.443s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[9.443s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[9.443s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[9.443s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[9.443s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[9.443s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[9.443s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[9.443s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[9.443s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:[m[K At global scope:
+[9.443s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[9.443s]    62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[9.443s]       |                                                                          [01;35m[K^~~~~~~~~~[m[K
+[9.443s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[9.443s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[9.443s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[9.443s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[9.444s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[9.444s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.444s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[9.444s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[9.459s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[9.459s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[9.459s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[9.459s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[9.459s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[9.459s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[9.459s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[9.459s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[9.459s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[9.459s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[9.460s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[9.460s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[9.460s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[9.460s]       |                                                                                  [01;35m[K^~~~~~~~~~[m[K
+[9.460s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[9.460s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[9.460s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[9.460s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[9.460s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[9.460s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.460s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[9.460s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[9.460s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[9.460s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[9.460s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[9.460s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[9.460s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[9.460s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[9.460s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[9.460s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[9.460s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[9.460s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[9.460s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[9.460s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[9.460s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[9.460s]       |                                                                                  [01;35m[K^~~~~~~~~~[m[K
+[9.460s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[9.460s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[9.460s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[9.460s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[9.460s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[9.460s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.461s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[9.461s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[9.461s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37[m[K,
+[9.461s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[9.461s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[9.461s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[9.461s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[9.461s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[9.462s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[9.462s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[9.462s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[9.462s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[9.462s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[9.462s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:[m[K At global scope:
+[9.462s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[9.462s]    62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[9.462s]       |                                                                          [01;35m[K^~~~~~~~~~[m[K
+[9.462s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[9.462s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[9.462s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[9.462s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[9.462s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[9.462s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.462s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[9.462s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[9.480s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[9.480s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[9.480s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[9.480s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[9.480s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[9.480s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[9.480s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[9.480s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[9.480s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[9.480s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[9.480s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[9.480s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[9.480s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[9.480s]       |                                                                                  [01;35m[K^~~~~~~~~~[m[K
+[9.480s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[9.480s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[9.480s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[9.480s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[9.480s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[9.480s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.480s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[9.480s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[9.480s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[9.480s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[9.480s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[9.480s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[9.480s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[9.481s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[9.481s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[9.481s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[9.481s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[9.481s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[9.481s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[9.481s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[9.481s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[9.481s]       |                                                                                  [01;35m[K^~~~~~~~~~[m[K
+[9.481s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[9.481s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[9.481s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[9.481s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[9.481s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[9.481s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.481s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[9.481s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[9.494s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:41[m[K,
+[9.494s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[9.494s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[9.494s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[9.494s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[9.494s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[9.494s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[9.494s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[9.494s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[9.494s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[9.494s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[9.494s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/se3quat.h:43:38:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[9.494s]    43 |       EIGEN_MAKE_ALIGNED_OPERATOR_NEW[01;35m[K;[m[K
+[9.494s]       |                                      [01;35m[K^[m[K
+[9.495s]       |                                      [31m[K-[m[K
+[9.513s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:41[m[K,
+[9.513s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[9.513s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[9.513s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[9.513s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[9.513s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[9.513s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[9.513s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[9.513s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[9.513s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[9.514s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[9.514s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/se3quat.h:43:38:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[9.514s]    43 |       EIGEN_MAKE_ALIGNED_OPERATOR_NEW[01;35m[K;[m[K
+[9.514s]       |                                      [01;35m[K^[m[K
+[9.514s]       |                                      [31m[K-[m[K
+[9.723s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37[m[K,
+[9.723s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[9.723s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[9.723s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[9.723s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[9.723s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[9.723s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[9.723s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[9.724s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[9.724s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[9.724s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[9.724s] /home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >[m[K’:
+[9.724s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_sba.h:40:35:[m[K   required from here
+[9.724s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[9.724s]    62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[9.724s]       |                                                                  [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[9.724s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[9.724s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[9.724s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[9.724s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[9.724s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[9.724s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.724s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[9.724s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[9.744s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37[m[K,
+[9.744s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[9.744s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[9.745s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[9.745s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[9.745s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[9.745s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[9.745s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[9.745s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[9.745s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[9.745s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[9.745s] /home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<6, g2o::SE3Quat>[m[K’:
+[9.745s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:[m[K   required from here
+[9.745s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[9.745s]    62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[9.745s]       |                                                                  [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[9.745s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[9.745s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[9.745s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[9.745s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[9.745s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[9.745s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.745s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[9.745s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[9.749s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37[m[K,
+[9.749s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[9.749s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[9.749s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[9.749s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[9.749s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[9.749s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[9.749s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[9.749s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[9.749s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[9.749s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[9.749s] /home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >[m[K’:
+[9.749s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_sba.h:40:35:[m[K   required from here
+[9.750s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[9.750s]    62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[9.750s]       |                                                                  [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[9.750s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[9.750s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[9.750s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[9.750s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[9.750s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[9.750s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.750s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[9.750s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[9.769s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[9.769s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[9.769s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[9.769s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[9.769s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[9.769s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[9.769s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[9.769s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[9.769s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[9.769s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[9.769s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[9.769s] /home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<6, g2o::SE3Quat, g2o::VertexSE3Expmap, g2o::VertexSE3Expmap>[m[K’:
+[9.769s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:83:24:[m[K   required from here
+[9.769s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[9.770s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[9.770s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[9.770s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[9.770s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[9.770s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[9.770s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[9.770s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[9.770s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.770s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[9.770s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[9.770s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[9.770s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[9.770s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[9.770s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[9.770s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[9.770s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[9.770s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[9.770s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[9.770s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[9.770s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[9.770s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[9.770s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[9.770s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[9.770s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[9.770s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[9.770s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[9.770s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[9.770s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[9.770s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[9.770s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.770s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[9.771s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[9.774s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37[m[K,
+[9.775s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[9.775s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[9.775s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[9.775s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[9.775s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[9.775s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[9.775s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[9.775s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[9.775s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[9.775s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[9.775s] /home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<6, g2o::SE3Quat>[m[K’:
+[9.775s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:[m[K   required from here
+[9.775s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[9.775s]    62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[9.775s]       |                                                                  [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[9.775s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[9.775s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[9.775s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[9.775s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[9.775s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[9.775s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.775s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[9.775s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[9.797s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[9.797s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[9.797s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[9.797s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[9.797s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[9.797s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[9.797s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[9.798s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[9.798s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[9.798s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[9.798s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[9.798s] /home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<6, g2o::SE3Quat, g2o::VertexSE3Expmap, g2o::VertexSE3Expmap>[m[K’:
+[9.798s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:83:24:[m[K   required from here
+[9.798s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[9.798s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[9.798s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[9.798s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[9.798s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[9.798s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[9.798s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[9.798s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[9.798s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.798s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[9.798s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[9.798s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[9.798s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[9.798s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[9.798s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[9.798s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[9.798s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[9.798s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[9.798s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[9.798s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[9.798s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[9.798s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[9.798s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[9.798s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[9.799s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[9.799s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[9.799s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[9.799s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[9.799s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[9.799s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[9.799s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.799s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[9.799s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[9.824s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[9.825s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[9.825s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[9.825s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[9.825s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[9.825s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[9.825s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[9.825s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[9.825s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[9.825s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[9.825s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[9.825s] /home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>[m[K’:
+[9.825s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:114:35:[m[K   required from here
+[9.825s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[9.825s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[9.825s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[9.825s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[9.825s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[9.825s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[9.825s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[9.825s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[9.825s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.825s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[9.825s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[9.835s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[9.836s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[9.836s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[9.836s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[9.836s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[9.836s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[9.836s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[9.836s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[9.836s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[9.836s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[9.836s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[9.836s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[9.836s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[9.836s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[9.836s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[9.836s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[9.836s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[9.836s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[9.836s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[9.836s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.836s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[9.836s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[9.851s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[9.851s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[9.852s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[9.852s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[9.852s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[9.852s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[9.852s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[9.852s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[9.852s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[9.852s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[9.852s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[9.852s] /home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>[m[K’:
+[9.852s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:114:35:[m[K   required from here
+[9.852s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[9.852s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[9.852s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[9.852s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[9.852s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[9.852s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[9.852s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[9.852s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[9.852s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.852s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[9.852s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[9.863s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[9.863s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[9.863s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[9.863s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[9.863s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[9.863s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[9.863s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[9.863s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[9.863s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[9.863s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[9.863s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[9.863s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[9.863s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[9.863s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[9.863s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[9.863s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[9.863s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[9.863s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[9.863s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[9.863s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.863s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[9.863s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[9.884s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[9.884s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[9.884s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[9.884s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[9.884s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[9.884s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[9.884s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[9.884s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[9.884s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[9.884s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[9.884s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[9.884s] /home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>[m[K’:
+[9.884s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:146:41:[m[K   required from here
+[9.884s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[9.884s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[9.884s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[9.885s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[9.885s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[9.885s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[9.885s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[9.885s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[9.885s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.885s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[9.885s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[9.885s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[9.885s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[9.885s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[9.885s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[9.885s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[9.885s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[9.885s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[9.885s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[9.885s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[9.885s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[9.885s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[9.885s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[9.885s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[9.885s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[9.885s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[9.885s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[9.885s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[9.885s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[9.885s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[9.885s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.885s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[9.885s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[9.912s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[9.912s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[9.912s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[9.912s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[9.912s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[9.912s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[9.912s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[9.912s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[9.912s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[9.912s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[9.912s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[9.912s] /home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>[m[K’:
+[9.912s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:146:41:[m[K   required from here
+[9.912s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[9.912s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[9.912s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[9.913s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[9.913s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[9.913s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[9.913s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[9.913s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[9.913s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.913s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[9.913s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[9.913s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[9.913s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[9.913s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[9.913s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[9.913s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[9.913s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[9.913s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[9.913s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[9.913s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[9.913s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[9.913s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[9.913s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[9.913s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[9.913s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[9.913s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[9.913s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[9.913s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[9.913s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[9.913s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[9.913s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.913s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[9.913s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[10.042s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37[m[K,
+[10.042s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[10.042s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[10.042s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[10.042s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[10.042s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[10.042s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[10.042s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[10.042s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[10.042s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[10.042s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[10.042s] /home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<7, g2o::Sim3>[m[K’:
+[10.042s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:[m[K   required from here
+[10.042s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[10.042s]    62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[10.042s]       |                                                                  [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[10.042s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[10.042s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[10.042s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[10.042s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[10.042s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[10.042s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[10.042s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[10.042s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[10.067s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[10.067s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[10.067s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[10.067s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[10.067s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[10.067s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[10.067s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[10.067s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[10.067s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[10.067s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[10.067s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[10.067s] /home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>[m[K’:
+[10.067s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:[m[K   required from here
+[10.067s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[10.067s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[10.067s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[10.067s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[10.067s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[10.067s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[10.067s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[10.067s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[10.067s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[10.067s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[10.067s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[10.068s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[10.068s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[10.068s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[10.068s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[10.068s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[10.068s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[10.068s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[10.068s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[10.068s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[10.068s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[10.068s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[10.068s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[10.068s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[10.068s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[10.068s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[10.068s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[10.068s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[10.068s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[10.068s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[10.068s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[10.068s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[10.068s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[10.070s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37[m[K,
+[10.070s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[10.070s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[10.071s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[10.071s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[10.071s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[10.071s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[10.071s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[10.071s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[10.071s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[10.071s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[10.071s] /home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<7, g2o::Sim3>[m[K’:
+[10.071s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:[m[K   required from here
+[10.071s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[10.071s]    62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[10.071s]       |                                                                  [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[10.071s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[10.071s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[10.071s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[10.071s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[10.071s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[10.071s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[10.071s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[10.071s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[10.096s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[10.097s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[10.097s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[10.097s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[10.097s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[10.097s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[10.097s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[10.097s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[10.097s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[10.097s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[10.097s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[10.097s] /home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>[m[K’:
+[10.097s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:[m[K   required from here
+[10.097s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[10.097s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[10.097s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[10.097s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[10.097s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[10.097s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[10.097s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[10.097s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[10.097s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[10.097s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[10.097s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[10.097s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[10.097s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[10.097s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[10.097s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[10.097s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[10.097s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[10.097s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[10.098s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[10.098s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[10.098s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[10.098s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[10.098s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[10.098s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[10.098s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[10.098s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[10.098s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[10.098s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[10.098s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[10.098s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[10.098s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[10.098s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[10.098s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[10.103s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[10.103s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[10.103s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[10.103s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[10.103s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[10.103s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[10.103s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[10.103s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[10.104s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[10.104s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[10.104s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[10.104s] /home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>[m[K’:
+[10.104s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:[m[K   required from here
+[10.104s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[10.104s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[10.104s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[10.104s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[10.104s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[10.104s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[10.104s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[10.104s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[10.104s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[10.104s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[10.104s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[10.115s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[10.115s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[10.115s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[10.115s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[10.115s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[10.115s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[10.115s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[10.115s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[10.115s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[10.115s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[10.115s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[10.115s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[10.115s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[10.115s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[10.116s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[10.116s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[10.116s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[10.116s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[10.116s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[10.116s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[10.116s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[10.116s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[10.131s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[10.132s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[10.132s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[10.132s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[10.132s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[10.132s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[10.132s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[10.132s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[10.132s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[10.132s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[10.132s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[10.132s] /home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>[m[K’:
+[10.132s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:[m[K   required from here
+[10.132s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[10.132s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[10.132s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[10.132s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[10.132s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[10.132s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[10.132s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[10.132s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[10.132s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[10.132s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[10.132s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[10.143s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+[10.143s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Converter.h:26[m[K,
+[10.143s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Frame.h:33[m[K,
+[10.143s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+[10.143s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/MapPoint.h:23[m[K,
+[10.143s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+[10.143s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[10.143s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[10.143s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[10.143s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[10.143s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[10.143s] [01m[K/home/msi/Dev/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[10.143s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[10.143s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[10.143s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[10.143s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[10.144s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[10.144s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:14[m[K,
+[10.144s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[10.144s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[10.144s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[10.144s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[10.541s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/include/Atlas.h:26[m[K,
+[10.541s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:25[m[K,
+[10.541s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[10.541s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[10.541s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[10.541s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[10.541s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[10.541s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/Pinhole.h:[m[K In member function ‘[01m[Kvirtual bool ORB_SLAM3::Pinhole::matchAndtriangulate(const cv::KeyPoint&, const cv::KeyPoint&, ORB_SLAM3::GeometricCamera*, Sophus::SE3f&, Sophus::SE3f&, float, float, Eigen::Vector3f&)[m[K’:
+[10.541s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/Pinhole.h:83:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kkp1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[10.541s]    83 |         bool matchAndtriangulate([01;35m[Kconst cv::KeyPoint& kp1[m[K, const cv::KeyPoint& kp2, GeometricCamera* pOther,
+[10.541s]       |                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[10.541s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/Pinhole.h:83:79:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kkp2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[10.541s]    83 |         bool matchAndtriangulate(const cv::KeyPoint& kp1, [01;35m[Kconst cv::KeyPoint& kp2[m[K, GeometricCamera* pOther,
+[10.542s]       |                                                           [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[10.542s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/Pinhole.h:83:101:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KpOther[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[10.542s]    83 |         bool matchAndtriangulate(const cv::KeyPoint& kp1, const cv::KeyPoint& kp2, [01;35m[KGeometricCamera* pOther[m[K,
+[10.542s]       |                                                                                    [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[10.542s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/Pinhole.h:84:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KTcw1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[10.542s]    84 |                                  [01;35m[KSophus::SE3f& Tcw1[m[K, Sophus::SE3f& Tcw2,
+[10.542s]       |                                  [01;35m[K~~~~~~~~~~~~~~^~~~[m[K
+[10.542s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/Pinhole.h:84:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KTcw2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[10.542s]    84 |                                  Sophus::SE3f& Tcw1, [01;35m[KSophus::SE3f& Tcw2[m[K,
+[10.542s]       |                                                      [01;35m[K~~~~~~~~~~~~~~^~~~[m[K
+[10.542s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/Pinhole.h:85:46:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KsigmaLevel1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[10.542s]    85 |                                  [01;35m[Kconst float sigmaLevel1[m[K, const float sigmaLevel2,
+[10.542s]       |                                  [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[10.542s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/Pinhole.h:85:71:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KsigmaLevel2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[10.542s]    85 |                                  const float sigmaLevel1, [01;35m[Kconst float sigmaLevel2[m[K,
+[10.542s]       |                                                           [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[10.542s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/Pinhole.h:86:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kx3Dtriangulated[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[10.542s]    86 |                                  [01;35m[KEigen::Vector3f& x3Dtriangulated[m[K) { return false;}
+[10.542s]       |                                  [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[10.542s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/include/Atlas.h:27[m[K,
+[10.542s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:25[m[K,
+[10.542s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[10.542s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[10.542s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[10.542s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[10.543s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[10.543s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:[m[K In constructor ‘[01m[KORB_SLAM3::KannalaBrandt8::KannalaBrandt8(std::vector<float>)[m[K’:
+[10.543s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:102:21:[m[K [01;35m[Kwarning: [m[K‘[01m[KORB_SLAM3::KannalaBrandt8::precision[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[10.543s]   102 |         const float [01;35m[Kprecision[m[K;
+[10.543s]       |                     [01;35m[K^~~~~~~~~[m[K
+[10.543s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:88:26:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[10.543s]    88 |         std::vector<int> [01;35m[KmvLappingArea[m[K;
+[10.543s]       |                          [01;35m[K^~~~~~~~~~~~~[m[K
+[10.543s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/include/Atlas.h:27[m[K,
+[10.543s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:25[m[K,
+[10.543s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[10.543s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[10.543s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[10.543s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[10.543s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[10.543s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:47:9:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[10.543s]    47 |         [01;35m[KKannalaBrandt8[m[K(const std::vector<float> _vParameters) : GeometricCamera(_vParameters), precision(1e-6), mvLappingArea(2,0) ,tvr(nullptr) {
+[10.543s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[10.543s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/include/Atlas.h:27[m[K,
+[10.543s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:25[m[K,
+[10.543s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[10.543s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[10.543s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[10.543s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[10.543s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:8[m[K:
+[10.543s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:[m[K In constructor ‘[01m[KORB_SLAM3::KannalaBrandt8::KannalaBrandt8(std::vector<float>, float)[m[K’:
+[10.543s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:102:21:[m[K [01;35m[Kwarning: [m[K‘[01m[KORB_SLAM3::KannalaBrandt8::precision[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[10.543s]   102 |         const float [01;35m[Kprecision[m[K;
+[10.543s]       |                     [01;35m[K^~~~~~~~~[m[K
+[10.543s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:88:26:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[10.543s]    88 |         std::vector<int> [01;35m[KmvLappingArea[m[K;
+[10.543s]       |                          [01;35m[K^~~~~~~~~~~~~[m[K
+[10.544s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:53:9:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[10.544s]    53 |         [01;35m[KKannalaBrandt8[m[K(const std::vector<float> _vParameters, const float _precision) : GeometricCamera(_vParameters),
+[10.544s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[10.544s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:[m[K In constructor ‘[01m[KORB_SLAM3::KannalaBrandt8::KannalaBrandt8(ORB_SLAM3::KannalaBrandt8*)[m[K’:
+[10.544s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:102:21:[m[K [01;35m[Kwarning: [m[K‘[01m[KORB_SLAM3::KannalaBrandt8::precision[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[10.544s]   102 |         const float [01;35m[Kprecision[m[K;
+[10.544s]       |                     [01;35m[K^~~~~~~~~[m[K
+[10.544s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:88:26:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[10.544s]    88 |         std::vector<int> [01;35m[KmvLappingArea[m[K;
+[10.544s]       |                          [01;35m[K^~~~~~~~~~~~~[m[K
+[10.544s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:59:9:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[10.544s]    59 |         [01;35m[KKannalaBrandt8[m[K(KannalaBrandt8* pKannala) : GeometricCamera(pKannala->mvParameters), precision(pKannala->precision), mvLappingArea(2,0) ,tvr(nullptr) {
+[10.544s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[10.576s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/include/Atlas.h:26[m[K,
+[10.576s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:25[m[K,
+[10.576s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[10.576s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[10.576s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[10.576s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[10.576s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[10.576s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/Pinhole.h:[m[K In member function ‘[01m[Kvirtual bool ORB_SLAM3::Pinhole::matchAndtriangulate(const cv::KeyPoint&, const cv::KeyPoint&, ORB_SLAM3::GeometricCamera*, Sophus::SE3f&, Sophus::SE3f&, float, float, Eigen::Vector3f&)[m[K’:
+[10.577s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/Pinhole.h:83:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kkp1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[10.577s]    83 |         bool matchAndtriangulate([01;35m[Kconst cv::KeyPoint& kp1[m[K, const cv::KeyPoint& kp2, GeometricCamera* pOther,
+[10.577s]       |                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[10.577s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/Pinhole.h:83:79:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kkp2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[10.577s]    83 |         bool matchAndtriangulate(const cv::KeyPoint& kp1, [01;35m[Kconst cv::KeyPoint& kp2[m[K, GeometricCamera* pOther,
+[10.577s]       |                                                           [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[10.577s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/Pinhole.h:83:101:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KpOther[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[10.577s]    83 |         bool matchAndtriangulate(const cv::KeyPoint& kp1, const cv::KeyPoint& kp2, [01;35m[KGeometricCamera* pOther[m[K,
+[10.577s]       |                                                                                    [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[10.577s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/Pinhole.h:84:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KTcw1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[10.577s]    84 |                                  [01;35m[KSophus::SE3f& Tcw1[m[K, Sophus::SE3f& Tcw2,
+[10.577s]       |                                  [01;35m[K~~~~~~~~~~~~~~^~~~[m[K
+[10.577s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/Pinhole.h:84:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KTcw2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[10.577s]    84 |                                  Sophus::SE3f& Tcw1, [01;35m[KSophus::SE3f& Tcw2[m[K,
+[10.577s]       |                                                      [01;35m[K~~~~~~~~~~~~~~^~~~[m[K
+[10.577s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/Pinhole.h:85:46:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KsigmaLevel1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[10.577s]    85 |                                  [01;35m[Kconst float sigmaLevel1[m[K, const float sigmaLevel2,
+[10.577s]       |                                  [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[10.577s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/Pinhole.h:85:71:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KsigmaLevel2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[10.577s]    85 |                                  const float sigmaLevel1, [01;35m[Kconst float sigmaLevel2[m[K,
+[10.577s]       |                                                           [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[10.577s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/Pinhole.h:86:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kx3Dtriangulated[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[10.577s]    86 |                                  [01;35m[KEigen::Vector3f& x3Dtriangulated[m[K) { return false;}
+[10.577s]       |                                  [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[10.578s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/include/Atlas.h:27[m[K,
+[10.578s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:25[m[K,
+[10.578s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[10.578s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[10.578s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[10.578s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[10.578s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[10.578s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:[m[K In constructor ‘[01m[KORB_SLAM3::KannalaBrandt8::KannalaBrandt8(std::vector<float>)[m[K’:
+[10.578s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:102:21:[m[K [01;35m[Kwarning: [m[K‘[01m[KORB_SLAM3::KannalaBrandt8::precision[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[10.578s]   102 |         const float [01;35m[Kprecision[m[K;
+[10.578s]       |                     [01;35m[K^~~~~~~~~[m[K
+[10.578s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:88:26:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[10.578s]    88 |         std::vector<int> [01;35m[KmvLappingArea[m[K;
+[10.578s]       |                          [01;35m[K^~~~~~~~~~~~~[m[K
+[10.578s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/include/Atlas.h:27[m[K,
+[10.578s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:25[m[K,
+[10.578s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[10.578s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[10.578s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[10.578s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[10.578s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[10.578s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:47:9:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[10.578s]    47 |         [01;35m[KKannalaBrandt8[m[K(const std::vector<float> _vParameters) : GeometricCamera(_vParameters), precision(1e-6), mvLappingArea(2,0) ,tvr(nullptr) {
+[10.578s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[10.578s] In file included from [01m[K/home/msi/Dev/ORB_SLAM3/include/Atlas.h:27[m[K,
+[10.578s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/FrameDrawer.h:25[m[K,
+[10.578s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Viewer.h:23[m[K,
+[10.578s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/Tracking.h:26[m[K,
+[10.578s]                  from [01m[K/home/msi/Dev/ORB_SLAM3/include/System.h:31[m[K,
+[10.579s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:28[m[K,
+[10.579s]                  from [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[10.579s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:[m[K In constructor ‘[01m[KORB_SLAM3::KannalaBrandt8::KannalaBrandt8(std::vector<float>, float)[m[K’:
+[10.579s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:102:21:[m[K [01;35m[Kwarning: [m[K‘[01m[KORB_SLAM3::KannalaBrandt8::precision[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[10.579s]   102 |         const float [01;35m[Kprecision[m[K;
+[10.579s]       |                     [01;35m[K^~~~~~~~~[m[K
+[10.579s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:88:26:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[10.579s]    88 |         std::vector<int> [01;35m[KmvLappingArea[m[K;
+[10.579s]       |                          [01;35m[K^~~~~~~~~~~~~[m[K
+[10.579s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:53:9:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[10.579s]    53 |         [01;35m[KKannalaBrandt8[m[K(const std::vector<float> _vParameters, const float _precision) : GeometricCamera(_vParameters),
+[10.579s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[10.579s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:[m[K In constructor ‘[01m[KORB_SLAM3::KannalaBrandt8::KannalaBrandt8(ORB_SLAM3::KannalaBrandt8*)[m[K’:
+[10.579s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:102:21:[m[K [01;35m[Kwarning: [m[K‘[01m[KORB_SLAM3::KannalaBrandt8::precision[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[10.579s]   102 |         const float [01;35m[Kprecision[m[K;
+[10.579s]       |                     [01;35m[K^~~~~~~~~[m[K
+[10.579s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:88:26:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[10.579s]    88 |         std::vector<int> [01;35m[KmvLappingArea[m[K;
+[10.579s]       |                          [01;35m[K^~~~~~~~~~~~~[m[K
+[10.579s] [01m[K/home/msi/Dev/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:59:9:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[10.579s]    59 |         [01;35m[KKannalaBrandt8[m[K(KannalaBrandt8* pKannala) : GeometricCamera(pKannala->mvParameters), precision(pKannala->precision), mvLappingArea(2,0) ,tvr(nullptr) {
+[10.579s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[11.171s] [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:[m[K In function ‘[01m[Kvoid signal_handler(int)[m[K’:
+[11.171s] [01m[K/home/msi/ros2_ws/src/orbslam3_ros2/src/stereo/stereo.cpp:15:25:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignal[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.172s]    15 | void signal_handler([01;35m[Kint signal[m[K)
+[11.172s]       |                     [01;35m[K~~~~^~~~~~[m[K
+[32.107s] [100%] [32m[1mLinking CXX executable stereo_node[0m
+[35.563s] /usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.4.2
+[35.568s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.4.2
+[36.331s] [100%] Built target stereo_node
+[36.338s] Invoked command in '/home/msi/ros2_ws/src/build/orbslam3_ros2' returned '0': AMENT_PREFIX_PATH=/home/msi/ros2_ws/src/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/msi/ros2_ws/src/install/cv_bridge:/home/msi/ros2_ws/install/vision_opencv:/home/msi/ros2_ws/install/orbslam3_ros2:/home/msi/ros2_ws/install/my_rtabmap_config:/home/msi/ros2_ws/install/my_robot_slam:/home/msi/ros2_ws/install/my_robot_navigation:/home/msi/ros2_ws/install/my_robot_detection:/home/msi/ros2_ws/install/my_robot_bringup:/home/msi/ros2_ws/install/my_robot_description:/home/msi/ros2_ws/install/multirobot_map_merge:/home/msi/ros2_ws/install/image_geometry:/home/msi/ros2_ws/install/explore_lite:/home/msi/ros2_ws/install/cv_bridge:/home/msi/ros2_ws/install/custom_msgs:/home/msi/ros2_ws/install/opencv_tests:/opt/ros/humble LD_LIBRARY_PATH=/home/msi/ros2_ws/src/install/cv_bridge/lib:/home/msi/ros2_ws/install/multirobot_map_merge/lib:/home/msi/ros2_ws/install/image_geometry/lib:/home/msi/ros2_ws/install/cv_bridge/lib:/home/msi/ros2_ws/install/custom_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/home/msi/Dev/Pangolin/lib:/home/msi/Dev/Pangolin/build PYTHONPATH=/home/msi/ros2_ws/src/install/cv_bridge/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/msi/ros2_ws/src/build/orbslam3_ros2 -- -j12 -l12
+[36.339s] Invoking command in '/home/msi/ros2_ws/src/build/orbslam3_ros2': AMENT_PREFIX_PATH=/home/msi/ros2_ws/src/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/msi/ros2_ws/src/install/cv_bridge:/home/msi/ros2_ws/install/vision_opencv:/home/msi/ros2_ws/install/orbslam3_ros2:/home/msi/ros2_ws/install/my_rtabmap_config:/home/msi/ros2_ws/install/my_robot_slam:/home/msi/ros2_ws/install/my_robot_navigation:/home/msi/ros2_ws/install/my_robot_detection:/home/msi/ros2_ws/install/my_robot_bringup:/home/msi/ros2_ws/install/my_robot_description:/home/msi/ros2_ws/install/multirobot_map_merge:/home/msi/ros2_ws/install/image_geometry:/home/msi/ros2_ws/install/explore_lite:/home/msi/ros2_ws/install/cv_bridge:/home/msi/ros2_ws/install/custom_msgs:/home/msi/ros2_ws/install/opencv_tests:/opt/ros/humble LD_LIBRARY_PATH=/home/msi/ros2_ws/src/install/cv_bridge/lib:/home/msi/ros2_ws/install/multirobot_map_merge/lib:/home/msi/ros2_ws/install/image_geometry/lib:/home/msi/ros2_ws/install/cv_bridge/lib:/home/msi/ros2_ws/install/custom_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/home/msi/Dev/Pangolin/lib:/home/msi/Dev/Pangolin/build PYTHONPATH=/home/msi/ros2_ws/src/install/cv_bridge/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/msi/ros2_ws/src/build/orbslam3_ros2
+[36.344s] -- Install configuration: ""
+[36.344s] -- Execute custom install script
+[36.344s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/lib/orbslam3_ros2/stereo_node
+[36.350s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/launch/launch.py
+[36.356s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/launch/stereo.launch.py
+[36.363s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/EuRoC.yaml
+[36.368s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/EuRoC_IMU/MH01.txt
+[36.373s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/EuRoC_IMU/MH02.txt
+[36.378s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/EuRoC_IMU/MH03.txt
+[36.383s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/EuRoC_IMU/MH04.txt
+[36.389s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/EuRoC_IMU/MH05.txt
+[36.395s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/EuRoC_IMU/V101.txt
+[36.401s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/EuRoC_IMU/V102.txt
+[36.406s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/EuRoC_IMU/V103.txt
+[36.411s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/EuRoC_IMU/V201.txt
+[36.416s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/EuRoC_IMU/V202.txt
+[36.422s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/EuRoC_IMU/V203.txt
+[36.427s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/EuRoC_TimeStamps/MH01.txt
+[36.432s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/EuRoC_TimeStamps/MH02.txt
+[36.437s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/EuRoC_TimeStamps/MH03.txt
+[36.442s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/EuRoC_TimeStamps/MH04.txt
+[36.447s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/EuRoC_TimeStamps/MH05.txt
+[36.452s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/EuRoC_TimeStamps/V101.txt
+[36.457s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/EuRoC_TimeStamps/V102.txt
+[36.463s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/EuRoC_TimeStamps/V103.txt
+[36.468s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/EuRoC_TimeStamps/V201.txt
+[36.473s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/EuRoC_TimeStamps/V202.txt
+[36.478s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/EuRoC_TimeStamps/V203.txt
+[36.483s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/MultiSession/EuRoC_MH01.yaml
+[36.488s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/MultiSession/EuRoC_MH02.yaml
+[36.494s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/MultiSession/EuRoC_MH03.yaml
+[36.500s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/MultiSession/EuRoC_MH04.yaml
+[36.506s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/MultiSession/EuRoC_MH05.yaml
+[36.511s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/MultiSession/EuRoC_V101.yaml
+[36.516s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/MultiSession/EuRoC_V102.yaml
+[36.522s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/MultiSession/EuRoC_V103.yaml
+[36.528s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/MultiSession/EuRoC_V201.yaml
+[36.533s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/MultiSession/EuRoC_V202.yaml
+[36.539s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/MultiSession/EuRoC_V203.yaml
+[36.545s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/RealSense_D435i.yaml
+[36.550s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/RealSense_T265.yaml
+[36.556s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM-VI.yaml
+[36.564s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM-VI_far.yaml
+[36.571s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-corridor1_512.txt
+[36.579s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-corridor2_1024.txt
+[36.585s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-corridor2_512.txt
+[36.590s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-corridor3_512.txt
+[36.596s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-corridor4_512.txt
+[36.602s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-corridor5_512.txt
+[36.607s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-magistrale1_512.txt
+[36.612s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-magistrale2_512.txt
+[36.617s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-magistrale3_512.txt
+[36.622s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-magistrale4_512.txt
+[36.628s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-magistrale5_512.txt
+[36.633s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-magistrale6_512.txt
+[36.638s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-outdoors1_512.txt
+[36.643s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-outdoors2_512.txt
+[36.651s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-outdoors3_512.txt
+[36.659s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-outdoors4_512.txt
+[36.665s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-outdoors5_512.txt
+[36.671s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-outdoors6_512.txt
+[36.676s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-outdoors7_512.txt
+[36.681s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-outdoors8_512.txt
+[36.687s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-room1_512.txt
+[36.692s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-room2_512.txt
+[36.698s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-room3_512.txt
+[36.704s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-room4_512.txt
+[36.710s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-room5_512.txt
+[36.715s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-room6_512.txt
+[36.720s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-slides1_512.txt
+[36.726s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-slides2_512.txt
+[36.732s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_IMU/dataset-slides3_512.txt
+[36.737s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-corridor1_512.txt
+[36.742s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-corridor2_1024.txt
+[36.748s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-corridor2_512.txt
+[36.753s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-corridor3_512.txt
+[36.758s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-corridor4_512.txt
+[36.763s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-corridor5_512.txt
+[36.768s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-magistrale1_512.txt
+[36.773s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-magistrale2_512.txt
+[36.779s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-magistrale3_512.txt
+[36.784s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-magistrale4_512.txt
+[36.789s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-magistrale5_512.txt
+[36.796s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-magistrale6_512.txt
+[36.802s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-outdoors1_512.txt
+[36.808s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-outdoors2_512.txt
+[36.813s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-outdoors3_512.txt
+[36.818s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-outdoors4_512.txt
+[36.823s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-outdoors5_512.txt
+[36.829s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-outdoors6_512.txt
+[36.835s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-outdoors7_512.txt
+[36.840s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-outdoors8_512.txt
+[36.845s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-room1_512.txt
+[36.850s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-room2_512.txt
+[36.856s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-room3_512.txt
+[36.861s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-room4_512.txt
+[36.866s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-room5_512.txt
+[36.871s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-room6_512.txt
+[36.877s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-slides1_512.txt
+[36.882s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-slides2_512.txt
+[36.887s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular-inertial/TUM_TimeStamps/dataset-slides3_512.txt
+[36.893s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/EuRoC.yaml
+[36.899s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/EuRoC_TimeStamps/MH01.txt
+[36.904s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/EuRoC_TimeStamps/MH02.txt
+[36.910s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/EuRoC_TimeStamps/MH03.txt
+[36.915s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/EuRoC_TimeStamps/MH04.txt
+[36.921s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/EuRoC_TimeStamps/MH05.txt
+[36.926s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/EuRoC_TimeStamps/V101.txt
+[36.931s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/EuRoC_TimeStamps/V102.txt
+[36.937s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/EuRoC_TimeStamps/V103.txt
+[36.942s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/EuRoC_TimeStamps/V201.txt
+[36.947s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/EuRoC_TimeStamps/V202.txt
+[36.952s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/EuRoC_TimeStamps/V203.txt
+[36.957s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/KITTI00-02.yaml
+[36.962s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/KITTI03.yaml
+[36.967s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/KITTI04-12.yaml
+[36.972s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/MultiSession/EuRoC_MH01.yaml
+[36.977s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/MultiSession/EuRoC_MH02.yaml
+[36.983s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/MultiSession/EuRoC_MH03.yaml
+[36.988s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/MultiSession/EuRoC_MH04.yaml
+[36.994s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/MultiSession/EuRoC_MH05.yaml
+[36.999s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/MultiSession/EuRoC_V101.yaml
+[37.005s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/MultiSession/EuRoC_V102.yaml
+[37.011s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/MultiSession/EuRoC_V103.yaml
+[37.016s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/MultiSession/EuRoC_V201.yaml
+[37.021s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/MultiSession/EuRoC_V202.yaml
+[37.026s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/MultiSession/EuRoC_V203.yaml
+[37.032s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/RealSense_D435i.yaml
+[37.037s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/RealSense_T265.yaml
+[37.042s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM-VI.yaml
+[37.047s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM1.yaml
+[37.052s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM2.yaml
+[37.057s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM3.yaml
+[37.063s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-corridor1_512.txt
+[37.068s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-corridor2_1024.txt
+[37.073s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-corridor2_512.txt
+[37.080s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-corridor3_512.txt
+[37.086s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-corridor4_512.txt
+[37.091s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-corridor5_512.txt
+[37.097s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-magistrale1_512.txt
+[37.102s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-magistrale2_512.txt
+[37.108s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-magistrale3_512.txt
+[37.113s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-magistrale4_512.txt
+[37.118s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-magistrale5_512.txt
+[37.123s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-magistrale6_512.txt
+[37.128s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-outdoors1_512.txt
+[37.134s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-outdoors2_512.txt
+[37.139s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-outdoors3_512.txt
+[37.144s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-outdoors4_512.txt
+[37.149s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-outdoors5_512.txt
+[37.154s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-outdoors6_512.txt
+[37.159s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-outdoors7_512.txt
+[37.164s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-outdoors8_512.txt
+[37.170s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-room1_512.txt
+[37.175s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-room2_512.txt
+[37.180s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-room3_512.txt
+[37.185s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-room4_512.txt
+[37.190s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-room5_512.txt
+[37.196s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-room6_512.txt
+[37.202s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-slides1_512.txt
+[37.207s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-slides2_512.txt
+[37.213s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/monocular/TUM_TimeStamps/dataset-slides3_512.txt
+[37.218s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/params.yaml
+[37.223s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/rgb-d-inertial/RealSense_D435i.yaml
+[37.229s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/rgb-d/RealSense_D435i.yaml
+[37.237s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/rgb-d/TUM1.yaml
+[37.244s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/rgb-d/TUM2.yaml
+[37.249s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/rgb-d/TUM3.yaml
+[37.254s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/rgb-d/associations/fr1_desk.txt
+[37.259s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/rgb-d/associations/fr1_desk2.txt
+[37.264s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/rgb-d/associations/fr1_room.txt
+[37.269s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/rgb-d/associations/fr1_xyz.txt
+[37.274s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/rgb-d/associations/fr2_desk.txt
+[37.279s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/rgb-d/associations/fr2_xyz.txt
+[37.284s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/rgb-d/associations/fr3_nstr_tex_near.txt
+[37.290s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/rgb-d/associations/fr3_office.txt
+[37.296s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/rgb-d/associations/fr3_office_val.txt
+[37.302s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/rgb-d/associations/fr3_str_tex_far.txt
+[37.308s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/rgb-d/associations/fr3_str_tex_near.txt
+[37.314s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/EuRoC.yaml
+[37.319s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/EuRoC_IMU/MH01.txt
+[37.324s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/EuRoC_IMU/MH02.txt
+[37.330s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/EuRoC_IMU/MH03.txt
+[37.336s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/EuRoC_IMU/MH04.txt
+[37.343s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/EuRoC_IMU/MH05.txt
+[37.350s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/EuRoC_IMU/V101.txt
+[37.355s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/EuRoC_IMU/V102.txt
+[37.360s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/EuRoC_IMU/V103.txt
+[37.365s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/EuRoC_IMU/V201.txt
+[37.370s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/EuRoC_IMU/V202.txt
+[37.375s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/EuRoC_IMU/V203.txt
+[37.380s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/EuRoC_TimeStamps/MH01.txt
+[37.385s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/EuRoC_TimeStamps/MH02.txt
+[37.390s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/EuRoC_TimeStamps/MH03.txt
+[37.396s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/EuRoC_TimeStamps/MH04.txt
+[37.402s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/EuRoC_TimeStamps/MH05.txt
+[37.408s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/EuRoC_TimeStamps/V101.txt
+[37.414s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/EuRoC_TimeStamps/V102.txt
+[37.419s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/EuRoC_TimeStamps/V103.txt
+[37.425s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/EuRoC_TimeStamps/V201.txt
+[37.430s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/EuRoC_TimeStamps/V202.txt
+[37.436s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/EuRoC_TimeStamps/V203.txt
+[37.441s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/EuRoC_TimeStamps/V203_2.txt
+[37.446s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/MultiSession/EuRoC_MH01.yaml
+[37.451s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/MultiSession/EuRoC_MH02.yaml
+[37.456s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/MultiSession/EuRoC_MH03.yaml
+[37.462s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/MultiSession/EuRoC_MH04.yaml
+[37.467s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/MultiSession/EuRoC_MH05.yaml
+[37.472s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/MultiSession/EuRoC_V101.yaml
+[37.477s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/MultiSession/EuRoC_V102.yaml
+[37.482s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/MultiSession/EuRoC_V103.yaml
+[37.487s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/MultiSession/EuRoC_V201.yaml
+[37.493s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/MultiSession/EuRoC_V202.yaml
+[37.499s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/MultiSession/EuRoC_V203.yaml
+[37.504s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/RealSense_D435i.yaml
+[37.510s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/RealSense_T265.yaml
+[37.515s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM-VI.yaml
+[37.520s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM-VI_far.yaml
+[37.525s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-corridor1_512.txt
+[37.531s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-corridor2_1024.txt
+[37.536s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-corridor2_512.txt
+[37.541s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-corridor3_512.txt
+[37.547s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-corridor4_512.txt
+[37.552s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-corridor5_512.txt
+[37.557s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-magistrale1_512.txt
+[37.563s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-magistrale2_512.txt
+[37.568s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-magistrale3_512.txt
+[37.573s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-magistrale4_512.txt
+[37.578s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-magistrale5_512.txt
+[37.584s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-magistrale6_512.txt
+[37.589s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-outdoors1_512.txt
+[37.594s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-outdoors2_512.txt
+[37.600s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-outdoors3_512.txt
+[37.606s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-outdoors4_512.txt
+[37.611s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-outdoors5_512.txt
+[37.617s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-outdoors6_512.txt
+[37.622s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-outdoors7_512.txt
+[37.627s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-outdoors8_512.txt
+[37.632s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-room1_512.txt
+[37.637s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-room2_512.txt
+[37.643s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-room3_512.txt
+[37.648s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-room4_512.txt
+[37.653s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-room5_512.txt
+[37.658s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-room6_512.txt
+[37.663s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-slides1_512.txt
+[37.673s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-slides2_512.txt
+[37.681s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_IMU/dataset-slides3_512.txt
+[37.688s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-corridor1_512.txt
+[37.693s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-corridor2_1024.txt
+[37.700s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-corridor2_512.txt
+[37.707s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-corridor3_512.txt
+[37.712s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-corridor4_512.txt
+[37.718s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-corridor5_512.txt
+[37.723s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-magistrale1_512.txt
+[37.728s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-magistrale2_512.txt
+[37.734s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-magistrale3_512.txt
+[37.740s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-magistrale4_512.txt
+[37.745s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-magistrale5_512.txt
+[37.750s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-magistrale6_512.txt
+[37.755s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-outdoors1_512.txt
+[37.761s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-outdoors2_512.txt
+[37.766s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-outdoors3_512.txt
+[37.771s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-outdoors4_512.txt
+[37.777s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-outdoors5_512.txt
+[37.783s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-outdoors6_512.txt
+[37.789s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-outdoors7_512.txt
+[37.794s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-outdoors8_512.txt
+[37.801s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-room1_512.txt
+[37.806s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-room2_512.txt
+[37.812s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-room3_512.txt
+[37.817s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-room4_512.txt
+[37.823s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-room5_512.txt
+[37.828s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-room6_512.txt
+[37.833s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-slides1_512.txt
+[37.838s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-slides2_512.txt
+[37.843s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo-inertial/TUM_TimeStamps/dataset-slides3_512.txt
+[37.848s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/EuRoC.yaml
+[37.854s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/EuRoC_TimeStamps/MH01.txt
+[37.859s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/EuRoC_TimeStamps/MH02.txt
+[37.864s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/EuRoC_TimeStamps/MH03.txt
+[37.869s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/EuRoC_TimeStamps/MH04.txt
+[37.874s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/EuRoC_TimeStamps/MH05.txt
+[37.879s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/EuRoC_TimeStamps/V101.txt
+[37.884s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/EuRoC_TimeStamps/V102.txt
+[37.890s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/EuRoC_TimeStamps/V103.txt
+[37.897s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/EuRoC_TimeStamps/V201.txt
+[37.903s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/EuRoC_TimeStamps/V202.txt
+[37.908s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/EuRoC_TimeStamps/V203.txt
+[37.914s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/KITTI00-02.yaml
+[37.919s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/KITTI03.yaml
+[37.924s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/KITTI04-12.yaml
+[37.930s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/MultiSession/EuRoC_MH01.yaml
+[37.935s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/MultiSession/EuRoC_MH02.yaml
+[37.940s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/MultiSession/EuRoC_MH03.yaml
+[37.946s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/MultiSession/EuRoC_MH04.yaml
+[37.951s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/MultiSession/EuRoC_MH05.yaml
+[37.956s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/MultiSession/EuRoC_V101.yaml
+[37.961s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/MultiSession/EuRoC_V102.yaml
+[37.966s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/MultiSession/EuRoC_V103.yaml
+[37.971s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/MultiSession/EuRoC_V201.yaml
+[37.976s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/MultiSession/EuRoC_V202.yaml
+[37.982s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/MultiSession/EuRoC_V203.yaml
+[37.987s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/RealSense_D435i.yaml
+[37.992s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/RealSense_T265.yaml
+[37.998s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM-VI.yaml
+[38.004s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-corridor1_512.txt
+[38.009s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-corridor2_1024.txt
+[38.014s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-corridor2_512.txt
+[38.020s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-corridor3_512.txt
+[38.025s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-corridor4_512.txt
+[38.033s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-corridor5_512.txt
+[38.042s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-magistrale1_512.txt
+[38.048s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-magistrale2_512.txt
+[38.053s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-magistrale3_512.txt
+[38.059s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-magistrale4_512.txt
+[38.064s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-magistrale5_512.txt
+[38.069s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-magistrale6_512.txt
+[38.075s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-outdoors1_512.txt
+[38.081s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-outdoors2_512.txt
+[38.089s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-outdoors3_512.txt
+[38.096s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-outdoors4_512.txt
+[38.103s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-outdoors5_512.txt
+[38.109s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-outdoors6_512.txt
+[38.115s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-outdoors7_512.txt
+[38.120s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-outdoors8_512.txt
+[38.125s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-room1_512.txt
+[38.130s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-room2_512.txt
+[38.136s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-room3_512.txt
+[38.141s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-room4_512.txt
+[38.146s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-room5_512.txt
+[38.151s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-room6_512.txt
+[38.157s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-slides1_512.txt
+[38.162s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-slides2_512.txt
+[38.167s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/TUM_TimeStamps/dataset-slides3_512.txt
+[38.172s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo/stereo_camera.yaml
+[38.177s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/config/stereo_camera.yaml
+[38.183s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/camera/stereo_camera.yaml
+[38.189s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/vocabulary/ORBvoc.txt
+[38.196s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/ament_index/resource_index/package_run_dependencies/orbslam3_ros2
+[38.202s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/ament_index/resource_index/parent_prefix_path/orbslam3_ros2
+[38.209s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/environment/ament_prefix_path.sh
+[38.214s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/environment/ament_prefix_path.dsv
+[38.219s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/environment/path.sh
+[38.225s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/environment/path.dsv
+[38.232s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/local_setup.bash
+[38.240s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/local_setup.sh
+[38.247s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/local_setup.zsh
+[38.252s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/local_setup.dsv
+[38.258s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/package.dsv
+[38.263s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/ament_index/resource_index/packages/orbslam3_ros2
+[38.268s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/cmake/ament_cmake_export_dependencies-extras.cmake
+[38.274s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/cmake/orbslam3_ros2Config.cmake
+[38.279s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/cmake/orbslam3_ros2Config-version.cmake
+[38.285s] -- Symlinking: /home/msi/ros2_ws/src/install/orbslam3_ros2/share/orbslam3_ros2/package.xml
+[38.295s] Invoked command in '/home/msi/ros2_ws/src/build/orbslam3_ros2' returned '0': AMENT_PREFIX_PATH=/home/msi/ros2_ws/src/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/msi/ros2_ws/src/install/cv_bridge:/home/msi/ros2_ws/install/vision_opencv:/home/msi/ros2_ws/install/orbslam3_ros2:/home/msi/ros2_ws/install/my_rtabmap_config:/home/msi/ros2_ws/install/my_robot_slam:/home/msi/ros2_ws/install/my_robot_navigation:/home/msi/ros2_ws/install/my_robot_detection:/home/msi/ros2_ws/install/my_robot_bringup:/home/msi/ros2_ws/install/my_robot_description:/home/msi/ros2_ws/install/multirobot_map_merge:/home/msi/ros2_ws/install/image_geometry:/home/msi/ros2_ws/install/explore_lite:/home/msi/ros2_ws/install/cv_bridge:/home/msi/ros2_ws/install/custom_msgs:/home/msi/ros2_ws/install/opencv_tests:/opt/ros/humble LD_LIBRARY_PATH=/home/msi/ros2_ws/src/install/cv_bridge/lib:/home/msi/ros2_ws/install/multirobot_map_merge/lib:/home/msi/ros2_ws/install/image_geometry/lib:/home/msi/ros2_ws/install/cv_bridge/lib:/home/msi/ros2_ws/install/custom_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/home/msi/Dev/Pangolin/lib:/home/msi/Dev/Pangolin/build PYTHONPATH=/home/msi/ros2_ws/src/install/cv_bridge/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/msi/ros2_ws/src/build/orbslam3_ros2

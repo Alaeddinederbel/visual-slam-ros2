@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from custom_msgs/msg/Detection.msg
+// generated code does not contain a copyright notice
+
+#include "sensor_msgs/msg/RegionOfInterest.idl"
+#include "std_msgs/msg/Header.idl"
+
+module custom_msgs {
+  module msg {
+    struct Detection {
+      std_msgs::msg::Header header;
+
+      string class_name;
+
+      float score;
+
+      @verbatim (language="comment", text=
+        "x_offset, y_offset, width, height")
+      sensor_msgs::msg::RegionOfInterest bbox;
+    };
+  };
+};
