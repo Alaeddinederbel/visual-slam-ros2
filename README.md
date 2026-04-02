@@ -1,237 +1,211 @@
-#  Visual SLAM Pipeline for Autonomous Robotic Navigation (ROS2)
+#   Visual SLAM Pipeline for Autonomous Robotic Navigation
 
-This repository contains the implementation of a **Visual SLAM (vSLAM) pipeline for autonomous robotic navigation**, developed as an end-of-studies thesis at **LATIS (2024–2025)**.
+<p align="center">
+  <img src="https://img.shields.io/badge/ROS2-Humble-blue?style=for-the-badge&logo=ros&logoColor=white"/>
+  <img src="https://img.shields.io/badge/ORB--SLAM3-Feature%20Extraction-orange?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/RTAB--Map-3D%20Mapping-green?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Nav2-Navigation-red?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Gazebo%20Classic-Simulation-purple?style=for-the-badge"/>
+</p>
 
-The project focuses on building a **modular ROS2-based robotic system** capable of autonomous navigation using **visual perception only**, validated in **Gazebo Classic simulation**.
-
----
-
-#  Project Objective
-
-The goal of this work is to design and implement a robotic system that can:
-
-- Perceive its environment using a monocular camera
-- Estimate its pose using visual SLAM
-- Build 2D/3D maps of the environment
-- Navigate autonomously to defined goals
-- Operate in a fully simulated ROS2 + Gazebo environment
+> **Thesis project — LATIS Laboratory**  
+> A complete Visual SLAM pipeline enabling a mobile robot to autonomously navigate using vision only — no LiDAR, no GPS.
 
 ---
 
-#   System Architecture
+##   Overview
 
-The system is built using a **modular ROS2 architecture** composed of multiple packages:
+This project presents the design and implementation of a **Visual SLAM (vSLAM) pipeline** for autonomous robotic navigation. The system relies exclusively on **visual perception** to enable a robot to:
+
+- Estimate its **pose** in real time using ORB feature extraction
+- Build accurate **2D and 3D maps** of its environment
+- **Navigate autonomously** toward user-defined goals
+
+The entire pipeline is built on a **modular ROS2 architecture**, validated in **Gazebo Classic** simulation.
+
+---
+
+##   System Architecture
+
+The pipeline is composed of three tightly integrated modules:
+
+```
+Camera Input
+     │
+     ▼
+┌─────────────────┐
+│   ORB-SLAM3     │  ──► Pose Estimation (6-DoF)
+│  Feature Extrac │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│   RTAB-Map      │  ──► 3D Point Cloud + 2D Occupancy Grid
+│  3D Mapping     │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│   Nav2 Stack    │  ──► Autonomous Navigation Commands
+│  Path Planning  │
+└─────────────────┘
+```
+
+### Hardware Architecture
+- **Chassis & Propulsion** — differential drive mobile base (URDF/XACRO modeled)
+- **Visual Perception** — RGB-D / stereo camera (calibrated, configured via `camera_config.yaml`)
+- **Control System** — onboard compute running ROS2 nodes
+
+### Software Architecture
+- **ROS2 modular node graph** with asynchronous inter-process communication
+- **Real-time image processing** with OpenCV
+- **Visualization** via RViz2 and Pangolin
+- **Spatial transform management** via TF tree
+
+---
+
+##   Project Structure
+
+```
 ros2_ws/
-├── src/
-│
-│ ├── my_robot_description/
-│ │ ├── config/
-│ │ │ └── camera_config.yaml
-│ │ ├── urdf/
-│ │ │ ├── camera.xacro
-│ │ │ ├── common_properties.xacro
-│ │ │ ├── mobile_base_gazebo.xacro
-│ │ │ └── my_robot.urdf.xacro
-│ │ ├── rviz/
-│ │ │ └── urdf_config.rviz
-│ │ ├── launch/
-│ │ │ └── display.launch.py
-│ │ ├── CMakeLists.txt
-│ │ └── package.xml
-│
-│ ├── my_robot_bringup/
-│ │ ├── config/
-│ │ │ └── nav2_tf_fix_params.yaml
-│ │ ├── rviz/
-│ │ │ └── urdf_config.rviz
-│ │ ├── worlds/
-│ │ │ └── my_world.world
-│ │ ├── launch/
-│ │ │ ├── my_robot_gazebo.launch.py
-│ │ │ └── my_robot_gazebo.launch.xml
-│ │ ├── CMakeLists.txt
-│ │ └── package.xml
-│
-│ ├── my_robot_navigation/
-│ │ ├── config/
-│ │ │ ├── ekf_config.yaml
-│ │ │ ├── nav2_params.yaml
-│ │ │ └── pose_transformer.yaml
-│ │ ├── launch/
-│ │ └── (additional SLAM / navigation nodes)
-│
-│ ├── ORB-SLAM3/ (external or custom integration)
-│ ├── RTAB-Map integration/
-│ ├── custom_control_nodes/
-│ └── other_support_packages/
-│
-├── build/
-├── install/
-├── log/
-└── README.md
+└── src/
+    ├── my_robot_description/         # Robot URDF model & visualization
+    │   ├── config/
+    │   │   └── camera_config.yaml
+    │   ├── urdf/
+    │   │   ├── camera.xacro
+    │   │   ├── common_properties.xacro
+    │   │   ├── mobile_base_gazebo.xacro
+    │   │   └── my_robot.urdf.xacro
+    │   ├── rviz/
+    │   │   └── urdf_config.rviz
+    │   └── launch/
+    │       ├── display.launch.py
+    │       └── display_launch.xml
+    │
+    ├── my_robot_bringup/             # Simulation launch & world
+    │   ├── config/
+    │   │   └── nav2_tf_fix_params.yaml
+    │   ├── worlds/
+    │   │   └── my_world.world
+    │   └── launch/
+    │       ├── my_robot_gazebo.launch.py
+    │       └── my_robot_gazebo.launch.xml
+    │
+    └── my_robot_navigation/          # SLAM & navigation configuration
+        └── config/
+            ├── ekf_config.yaml
+            ├── nav2_params.yaml
+            └── pose_transformer.yaml
+```
 
 ---
 
-#   Robot Description
+##   Dependencies
 
-### `my_robot_description`
-This package defines the robot model and visualization tools.
-
-- URDF / XACRO robot model
-- Camera sensor configuration
-- RViz visualization setup
-- Robot parameters and properties
-
-  Key files:
-- `my_robot.urdf.xacro`
-- `camera.xacro`
-- `mobile_base_gazebo.xacro`
-- `camera_config.yaml`
+| Tool / Library | Role |
+|---|---|
+| **ROS2 Humble** | Middleware & communication framework |
+| **ORB-SLAM3** | Visual odometry & pose estimation |
+| **RTAB-Map** | Loop closure, 3D mapping, 2D grid generation |
+| **Nav2** | Path planning & autonomous navigation |
+| **Gazebo Classic** | Physics simulation environment |
+| **OpenCV** | Real-time image processing |
+| **Pangolin** | ORB-SLAM3 visualization |
+| **RViz2** | ROS2 data visualization |
+| **robot_localization (EKF)** | State estimation |
 
 ---
 
-#  Simulation & Bringup
+##   Getting Started
 
-### `my_robot_bringup`
-Handles robot execution in simulation.
+### Prerequisites
 
-- Gazebo Classic world integration
-- Robot spawn and initialization
-- Simulation launch files
-- RViz configuration
+- Ubuntu 22.04
+- ROS2 Humble
+- Gazebo Classic 11
+- ORB-SLAM3 (built from source with ROS2 wrapper)
+- RTAB-Map ROS2 package
+- Nav2
 
-  Key files:
-- `my_robot_gazebo.launch.py`
-- `my_world.world`
-- `nav2_tf_fix_params.yaml`
+### Installation
 
----
+```bash
+# Clone the repository
+git clone https://github.com/<your-username>/<your-repo>.git
+cd <your-repo>/ros2_ws
 
-#   Navigation & SLAM
+# Install dependencies
+rosdep install --from-paths src --ignore-src -r -y
 
-### `my_robot_navigation`
-Handles perception, localization, and navigation.
+# Build the workspace
+colcon build --symlink-install
+source install/setup.bash
+```
 
-- EKF sensor fusion (`ekf_config.yaml`)
-- Nav2 configuration (`nav2_params.yaml`)
-- Pose transformation system
-- SLAM integration logic
+### Launch the Simulation
 
----
+```bash
+# 1. Launch Gazebo with the robot
+ros2 launch my_robot_bringup my_robot_gazebo.launch.py
 
-#  Visual SLAM Pipeline
+# 2. Launch the vSLAM pipeline (ORB-SLAM3 + RTAB-Map)
+ros2 launch my_robot_navigation slam.launch.py
 
-The pipeline integrates:
-
-###   Visual Perception
-- Camera stream processing
-- OpenCV-based image handling
-
-###   Feature Extraction
-- ORB feature detection
-- Robust feature matching
-
-###   Localization
-- ORB-SLAM3 for pose estimation
-- Real-time trajectory tracking
-
-###   Mapping
-- RTAB-Map for:
-  - 2D occupancy grid
-  - 3D point cloud map
-  - Loop closure detection
-
-###   Navigation
-- ROS2 Nav2 stack
-- Path planning
-- Obstacle avoidance
-- Goal-based navigation
+# 3. Launch Nav2 for autonomous navigation
+ros2 launch my_robot_navigation navigation.launch.py
+```
 
 ---
 
-#   Simulation Environment
+##   Experiments & Results
 
-The system is tested in:
+### Exploration Phase
+The robot was teleoperated to explore the simulated environment, during which:
+- ORB features were continuously extracted and matched
+- RTAB-Map built a **3D point cloud** and projected a **2D occupancy grid**
+- The robot trajectory was recorded and visualized as a pose graph
 
-- **Gazebo Classic**
-- Custom robot world (`my_world.world`)
-- RViz for visualization
-- ROS2 communication layer
+### Autonomous Navigation Phase
+After map generation, navigation goals were sent via RViz2. The robot successfully:
+- Localized itself within the previously built map
+- Planned and followed collision-free paths
+- Reached defined objectives autonomously
 
----
-
-#   Technologies Used
-
-- ROS2 (Humble / Foxy depending on setup)
-- Gazebo Classic
-- ORB-SLAM3
-- RTAB-Map
-- Nav2 Stack
-- OpenCV
-- RViz2
-- EKF Sensor Fusion
+### System Validation
+- **rqt_graph** — confirmed correct ROS2 topic flow between all nodes
+- **TF tree** — verified consistency of all spatial transformations
 
 ---
 
-#   Results
+##   Challenges
 
-The system demonstrates:
-
-- Successful visual-based localization
-- Accurate 2D and 3D mapping
-- Stable trajectory estimation
-- Autonomous navigation in simulation
-- Robust ROS2 modular architecture
+- **ORB-SLAM3 / ROS2 integration** — C++ standalone library required significant adaptation for ROS2 message compatibility and thread management
+- **Visual data synchronization** — ensuring all modules operated on coherent, time-aligned data streams
+- **Camera calibration** — precise intrinsic/distortion calibration was critical for accurate pose estimation
+- **Modular inter-process communication** — designing non-blocking ROS2 node communication required rigorous software architecture
+- **RAM constraints** — limited memory required process optimization and task sequencing to maintain real-time performance
 
 ---
 
-#   Key Achievements
+##   Future Work
 
-✔ Fully modular ROS2 architecture  
-✔ Visual-only SLAM navigation system  
-✔ Integration of ORB-SLAM3 + RTAB-Map + Nav2  
-✔ Real-time simulation in Gazebo  
-✔ End-to-end autonomous navigation pipeline  
+- **Object detection with YOLO** — detect and identify objects/persons for assistive or surveillance robotics
+- **IoT integration** — remote supervision, real-time alerts, and multi-agent collaboration via an IoT platform
+- **Real-world deployment** — transition from simulation to a physical robot to validate robustness under real-world conditions
 
 ---
 
-#   Thesis Summary
+##   Keywords
 
-This thesis, carried out at **LATIS**, focuses on the development of a **Visual SLAM pipeline for autonomous robotic navigation**.
-
-The system enables a robot to navigate using only visual perception by combining:
-
-- ORB-SLAM3 for pose estimation  
-- RTAB-Map for mapping  
-- Nav2 for autonomous navigation  
-
-Experiments in Gazebo Classic demonstrate that the robot can:
-- Explore unknown environments
-- Generate accurate 2D/3D maps
-- Navigate autonomously to target goals
-
-The results validate the proposed architecture and confirm the feasibility of vision-only robotic navigation systems.
+`Robotic Navigation` · `Visual Perception` · `Visual SLAM` · `ROS2` · `Localization` · `Mapping` · `ORB-SLAM3` · `RTAB-Map` · `Nav2` · `Gazebo`
 
 ---
 
-#  Future Work
+##   Author
 
-- Deployment on real hardware robot
-- Deep learning-based perception improvement
-- Better loop closure robustness
-- Optimization for embedded systems
-- Multi-robot collaboration
+**[Ala Eddine Derbel**  
+Embedded Systems Engineer
+Thesis carried out at **LATIS Laboratory**  
 
 ---
-
-#  Author
-Ala Eddine Derbel - Embedded Systems Engineer
-End-of-studies project  
-**LATIS – 2024/2025**
-
----
-
-#  Keywords
-
-Visual SLAM, ROS2, ORB-SLAM3, RTAB-Map, Nav2, Gazebo Classic, Robotic Navigation, Mapping, Localization
-
