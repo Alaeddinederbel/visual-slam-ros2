@@ -204,8 +204,8 @@ After map generation, navigation goals were sent via RViz2. The robot successful
 
 ##   Author
 
-**[Ala Eddine Derbel**  
-Embedded Systems Engineer
+**Ala Eddine Derbel**  
+Embedded Systems Engineer,
 Thesis carried out at **LATIS Laboratory**  
 
 ---
