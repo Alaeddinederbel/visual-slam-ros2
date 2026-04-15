@@ -9,7 +9,7 @@
 </p>
 
 > **Thesis project - LATIS Laboratory**  
-> A complete Visual SLAM pipeline enabling a mobile robot to autonomously navigate using vision only — no LiDAR, no GPS.
+> A complete Visual SLAM pipeline enabling a mobile robot to autonomously navigate using vision only, no LiDAR, no GPS.
 
 ---
 
