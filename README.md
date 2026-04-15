@@ -190,9 +190,9 @@ After map generation, navigation goals were sent via RViz2. The robot successful
 
 ##   Future Work
 
-- **Object detection with YOLO** — detect and identify objects/persons for assistive or surveillance robotics
-- **IoT integration** — remote supervision, real-time alerts, and multi-agent collaboration via an IoT platform
-- **Real-world deployment** — transition from simulation to a physical robot to validate robustness under real-world conditions
+- **Object detection with YOLO** : detect and identify objects/persons for assistive or surveillance robotics
+- **IoT integration** : remote supervision, real-time alerts, and multi-agent collaboration via an IoT platform
+- **Real-world deployment** : transition from simulation to a physical robot to validate robustness under real-world conditions
 
 ---
 
