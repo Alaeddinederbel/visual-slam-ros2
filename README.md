@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/Gazebo%20Classic-Simulation-purple?style=for-the-badge"/>
 </p>
 
-> **Thesis project — LATIS Laboratory**  
+> **Thesis project - LATIS Laboratory**  
 > A complete Visual SLAM pipeline enabling a mobile robot to autonomously navigate using vision only — no LiDAR, no GPS.
 
 ---
@@ -198,14 +198,14 @@ After map generation, navigation goals were sent via RViz2. The robot successful
 
 ##   Keywords
 
-`Robotic Navigation` · `Visual Perception` · `Visual SLAM` · `ROS2` · `Localization` · `Mapping` · `ORB-SLAM3` · `RTAB-Map` · `Nav2` · `Gazebo`
+`Robotic Navigation` · `Visual Perception` · `Visual SLAM` · `ROS2` · `Localization` · `Mapping` · `ORB-SLAM3` · `RTAB-Map` · `Nav2` · `Gazebo Classic`
 
 ---
 
 ##   Author
 
 **Ala Eddine Derbel**  
-Embedded Systems Engineer,
+*Embedded Systems Engineer*,
 Thesis carried out at **LATIS Laboratory**  
 
 ---
